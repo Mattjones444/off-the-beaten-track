@@ -1,0 +1,34 @@
+[
+    {
+      "pk": 1,
+      "model": "activity.category",
+      "fields": {
+        "name": "Adventure",
+        "friendly_name": "Adventure"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "activity.category",
+      "fields": {
+        "name": "Family",
+        "friendly_name": "Family"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "activity.category",
+      "fields": {
+        "name": "Couples",
+        "friendly_name": "Couples"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "activity.category",
+      "fields": {
+        "name": "Culture and History",
+        "friendly_name": "Culture and History"
+      }
+    }
+  ]

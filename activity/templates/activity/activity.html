@@ -10,10 +10,64 @@
 {% endblock %}
 
 {% block content %}
-<div class="container header-container">
-    <div class="row">
-        <div class="col">{{ activity }}</div>
+<div class="overlay"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center mt-3">
+                <h2 class="logo-font">Products</h2>
+            </div>
+        </div>
+            <div class="row">
+                <div class="product-container col-10 offset-1">
+                    <div class="row">
+                        {% for activity in activitys %}
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card h-100 border-0">
+                                {% if activity.image %}
+                                <a href="">
+                                <img class="card-img-top img-fluid" src="{{ activity.image }}" alt="{{ activity.name }}">
+                                </a>
+                                {% else %}
+                                <a href="">
+                                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ activity.name }}">
+                                </a>
+                                {% endif %}
+                                <div class="card-body pb-0">
+                                <p class="mb-0">{{ activity.name }}</p>
+                                </div>
+                                    <div class="card-footer bg-white pt-0 border-0 text-left">
+                                    <div class="row">
+                                        <div class="col">
+                                        <p class="lead mb-0 text-left font-weight-bold">${{ activity.price_per_person }}</p>
+                                        {% if activity.category %}
+                                        <p class="small mt-1 mb-0">
+                                            <a class="text-muted" href="">
+                                                <i class="fas fa-tag mr-1"></i>{{ activity.category.friendly_name }}
+                                            </a>
+                                        </p>
+                                        {% endif %}
+                                        {% if activity.rating %}
+                                            <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ activity.rating }} / 5</small>
+                                        {% else %}
+                                            <small class="text-muted">No Rating</small>
+                                        {% endif %}
+                                        {% if request.user.is_superuser %}
+                                            <small class="ml-3">
+                                                <a href="">Edit</a> | 
+                                                <a class="text-danger" href="">Delete</a>
+                                            </small>
+                                        {% endif %}
+                                    </div>
+                                    </div>
+                                    </div>
+                            </div>
+                            
+                        </div>
+                        {% endfor %}
+                    </div>
+                    
+                </div>
+            </div>
     </div>
-   </div>
     
 {% endblock %}

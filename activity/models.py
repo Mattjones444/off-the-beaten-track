@@ -27,6 +27,7 @@ class Activity(models.Model):
     group_size = models.IntegerField()
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     duration = models.DecimalField(max_digits=6, decimal_places=1)
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
 
 

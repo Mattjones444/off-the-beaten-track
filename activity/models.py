@@ -18,11 +18,17 @@ class Category(models.Model):
 
 
 class Activity(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Activities'
+
+
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()
     country = models.CharField(max_length=254)
+    location = models.CharField(max_length=254, null=True)
     price_per_person = models.DecimalField(max_digits=6, decimal_places=2)
     group_size = models.IntegerField()
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)

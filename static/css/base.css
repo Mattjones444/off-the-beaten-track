@@ -66,6 +66,18 @@ body {
 	z-index: -1;
 }
 
+.card-img-top {
+    height: 200px;
+    width: 400px;
+    background-size: cover;
+}
+
+.globe {
+    font-size: 15px;
+}
+
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

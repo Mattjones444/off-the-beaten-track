@@ -76,6 +76,11 @@ body {
     font-size: 15px;
 }
 
+.activity_detail_image {
+    height: 400px;
+    width: 500px;
+}
+
 
 
 /* -------------------------------- Media Queries */

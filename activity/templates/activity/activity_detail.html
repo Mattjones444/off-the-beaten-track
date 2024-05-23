@@ -17,7 +17,7 @@
                 <div class="image-container my-5">
                     {% if activity.image %}
                         <a href="{{ activity.image.url }}" target="_blank">
-                            <img class="card-img-top img-fluid" src="{{ activity.image.url }}" alt="{{ activity.name }}">
+                            <img class="card-img-top img-fluid activity_detail_image" src="{{ activity.image.url }}" alt="{{ activity.name }}">
                         </a>
                         {% else %}
                         <a href="">
@@ -30,6 +30,12 @@
                 <div class="activity-details-container mb-5 mt-md-5">
                     <p class="mb-0">{{ activity.name }}</p>
                     <p class="lead mb-0 text-left font-weight-bold">${{ activity.price_per_person }}</p>
+                    <i class="fas fa-tag mr-1"></i>{{ activity.category.friendly_name }}
+                    <br>
+                    <i class="fas fa-user-friends"></i> Group Size: {{ activity.group_size }}
+                    <br>
+                    <i class="far fa-clock"></i> Duration: {{ activity.duration}} hours
+                    <br>
                     {% if activity.rating %}
                         <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ activity.rating }} / 5</small>
                     {% else %}

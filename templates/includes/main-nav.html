@@ -16,11 +16,11 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Activity Type
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Adventure</a>
-                <a href="" class="dropdown-item">Family</a>
-                <a href="" class="dropdown-item">Couples</a>
-                <a href="" class="dropdown-item">Culture & History</a>
+            <div class="dropdown-menu border-0" aria-labelledby="activity_type-link">
+                <a href="{% url 'activity' %}?category=Adventure" class="dropdown-item">Adventure</a>
+                <a href="{% url 'activity' %}?category=Family" class="dropdown-item">Family</a>
+                <a href="{% url 'activity' %}?category=Couples" class="dropdown-item">Couples</a>
+                <a href="{% url 'activity' %}?category=Culture and History" class="dropdown-item">Culture & History</a>
             </div>
         </li>
 
@@ -29,17 +29,17 @@
                 Country
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">France</a>
-                <a href="" class="dropdown-item">Germany</a>
-                <a href="" class="dropdown-item">Italy</a>
-                <a href="" class="dropdown-item">Spain</a>
-                <a href="" class="dropdown-item">Greece</a>
-                <a href="" class="dropdown-item">Turkey</a>
-                <a href="" class="dropdown-item">Croatia</a>
-                <a href="" class="dropdown-item">Thailand</a>
-                <a href="" class="dropdown-item">Australia</a>
-                <a href="" class="dropdown-item">Indonesia</a>
-                <a href="" class="dropdown-item">All Countries</a>
+                <a href="{% url 'activity' %}?country=France" class="dropdown-item">France</a>
+                <a href="{% url 'activity' %}?country=Germany" class="dropdown-item">Germany</a>
+                <a href="{% url 'activity' %}?country=Italy" class="dropdown-item">Italy</a>
+                <a href="{% url 'activity' %}?country=Spain" class="dropdown-item">Spain</a>
+                <a href="{% url 'activity' %}?country=Greece" class="dropdown-item">Greece</a>
+                <a href="{% url 'activity' %}?country=Turkey" class="dropdown-item">Turkey</a>
+                <a href="{% url 'activity' %}?country=Croatia" class="dropdown-item">Croatia</a>
+                <a href="{% url 'activity' %}?country=Thailand" class="dropdown-item">Thailand</a>
+                <a href="{% url 'activity' %}?country=Australia" class="dropdown-item">Australia</a>
+                <a href="{% url 'activity' %}?country=Indonesia" class="dropdown-item">Indonesia</a>
+                <a href="{% url 'activity' %}" class="dropdown-item">All Countries</a>
             </div>
         </li>
 

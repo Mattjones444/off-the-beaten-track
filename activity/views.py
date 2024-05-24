@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from .models import Category,Activity
+from .models import Category, Activity
 
 
 def all_activity(request):
@@ -9,6 +9,21 @@ def all_activity(request):
 
     activity = Activity.objects.all()
     query = None
+    categories = None
+    country = None
+
+    if request.GET:
+        if 'category' in request.GET:
+            categories = request.GET['category'].split(',')
+            activity = activity.filter(category__name__in=categories)
+            categories = Category.objects.filter(name__in=categories)
+
+    if request.GET:
+        if 'country' in request.GET:
+            country = request.GET['country'].split(',')
+            activity = activity.filter(country__in=country)
+            country = Activity.objects.filter(name__in=country)
+            
 
     if request.GET:
         if 'q' in request.GET:
@@ -20,11 +35,12 @@ def all_activity(request):
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             activity = activity.filter(queries)
 
-            print(activity)
 
     context = {
         "activity": activity,
         'search_term': query,
+        'current_categories': categories,
+        'country': country,
     }
 
 

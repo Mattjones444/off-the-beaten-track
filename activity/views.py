@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from .models import Category, Activity
+from django.db.models.functions import Lower
 
 
 def all_activity(request):
@@ -11,6 +12,22 @@ def all_activity(request):
     query = None
     categories = None
     country = None
+    sort = None
+    direction = None
+
+    if request.GET:
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'name':
+                sortkey = 'lower_name'
+                activity = activity.annotate(lower_name=Lower('name'))
+
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            activity = activity.order_by(sortkey)
 
     if request.GET:
         if 'category' in request.GET:
@@ -35,12 +52,15 @@ def all_activity(request):
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             activity = activity.filter(queries)
 
+    current_sorting = f'{sort}_{direction}'
+
 
     context = {
         "activity": activity,
         'search_term': query,
         'current_categories': categories,
         'country': country,
+        'current_sorting': current_sorting,
     }
 
 

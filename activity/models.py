@@ -29,7 +29,7 @@ class Activity(models.Model):
     description = models.TextField()
     country = models.CharField(max_length=254)
     location = models.CharField(max_length=254, null=True)
-    price_per_person = models.DecimalField(max_digits=6, decimal_places=2)
+    price = models.DecimalField(max_digits=6, decimal_places=2)
     group_size = models.IntegerField()
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     duration = models.DecimalField(max_digits=6, decimal_places=1)

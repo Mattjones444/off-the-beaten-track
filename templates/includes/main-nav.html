@@ -4,10 +4,10 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Activities
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-activity-link">
+                <a href="{% url 'activity' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'activity' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'activity' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
                 <a href="{% url 'activity' %}" class="dropdown-item">All Activities</a>
             </div>
         </li>

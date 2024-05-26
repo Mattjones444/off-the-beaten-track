@@ -11,7 +11,7 @@ class ActivityAdmin(admin.ModelAdmin):
         'description',
         'country',
         'location',
-        'price_per_person',
+        'price',
         'group_size',
         'rating',
         'duration',

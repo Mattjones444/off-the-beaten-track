@@ -1,4 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
+from datetime import datetime
+
 
 
 def view_bag(request):
@@ -11,6 +13,14 @@ def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
 
     quantity = int(request.POST.get('quantity'))
+    date = request.POST.get('datepickerfrom')
+    if date:
+        try:
+            date_obj = datetime.strptime(date,'%Y-%m-%d').date()
+            print(date_obj)
+        except ValueError:
+            print("Incorrect date format")
+
     redirect_url = request.POST.get('redirect_url')
     bag = request.session.get('bag', {})
 
@@ -20,5 +30,5 @@ def add_to_bag(request, item_id):
         bag[item_id] = quantity
 
     request.session['bag'] = bag
-    print(request.session['bag'])
+    print(bag)
     return redirect(redirect_url)

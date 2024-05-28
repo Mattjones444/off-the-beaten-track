@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 from decimal import Decimal
 from django.conf import settings
 from django.shortcuts import get_object_or_404
@@ -75,3 +75,37 @@ def add_to_bag(request, item_id):
         return redirect(redirect_url)
     else:
         return redirect('view_bag')
+
+
+def adjust_bag(request, item_id):
+    
+    quantity = int(request.POST.get('quantity'))
+    bag = request.session.get('bag', {})
+
+    if quantity > 0:
+        bag[item_id] = quantity
+
+    else:
+        bag.pop(item_id)
+
+    request.session['bag'] = bag
+    
+    return redirect(reverse('view_bag'))
+
+
+def remove_from_bag(request, item_id):
+    """Remove the item from the shopping bag"""
+
+    if request.method == "POST":
+        bag = request.session.get('bag', {})
+        print(bag)
+        return HttpResponse(status=200)
+
+
+    
+
+
+    
+
+    
+

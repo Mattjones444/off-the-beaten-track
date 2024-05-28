@@ -25,6 +25,7 @@
                 {% if bag_items %}
                     <div class="table-responsive rounded"></div>
                     {{ bag_items }}
+                    {{ grand_total }}
                 {% else %}
                     <p class="lead mb-5">Your bag is empty.</p>
                     <a href="{% url 'activity' %}" class="btn btn-outline-black rounded-0 btn-lg">

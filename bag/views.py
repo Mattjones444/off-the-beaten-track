@@ -4,6 +4,7 @@ from django.conf import settings
 from django.shortcuts import get_object_or_404
 from activity.models import Category, Activity
 from datetime import datetime
+from django.contrib import messages
 
 # Create your views here.
 
@@ -30,14 +31,16 @@ def view_bag(request):
             quantity = item_data['quantity']
             date = item_data.get('date', '')
         total += quantity * activity.price
-        product_count += quantity
+        product_count += quantity  
         bag_items.append({
             'item_id': item_id,
             'quantity': quantity,
             'activity': activity,
             'date': date,
         })
-    request.session['bag'] = bag
+          
+        request.session['bag'] = bag
+    
     grand_total = total
 
     context = {
@@ -59,6 +62,7 @@ def add_to_bag(request, item_id):
         date = request.POST.get('datepickerfrom')
         redirect_url = request.POST.get('redirect_url') or 'view_bag'
         bag = request.session.get('bag', {})
+        activity = get_object_or_404(Activity, pk=item_id)
 
         if item_id in bag:
             if isinstance(bag[item_id], int):
@@ -69,6 +73,7 @@ def add_to_bag(request, item_id):
                 bag[item_id]['date'] = date  # Update the date
         else:
             bag[item_id] = {'quantity': quantity, 'date': date}
+            messages.success(request, f'Added {activity.name} to bag')  
 
         request.session['bag'] = bag
         print(bag)

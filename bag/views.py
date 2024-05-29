@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, HttpResponse
 from decimal import Decimal
 from django.conf import settings
 from django.shortcuts import get_object_or_404
@@ -96,10 +96,16 @@ def adjust_bag(request, item_id):
 def remove_from_bag(request, item_id):
     """Remove the item from the shopping bag"""
 
-    if request.method == "POST":
-        bag = request.session.get('bag', {})
-        print(bag)
-        return HttpResponse(status=200)
+    
+    try:
+        if request.method == "POST":
+            bag = request.session.get('bag', {})
+            bag.pop(item_id)
+            request.session['bag'] = bag
+            return HttpResponse(status=200)
+
+    except Exception as e:
+        return HttpResponse(status=500)
 
 
     

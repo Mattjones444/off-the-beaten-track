@@ -87,12 +87,14 @@ def adjust_bag(request, item_id):
     quantity = int(request.POST.get('quantity'))
     bag = request.session.get('bag', {})
     activity = get_object_or_404(Activity, pk=item_id)
+    
 
     if quantity > 0:
         bag[item_id] = quantity
         messages.success(request, f'Updated {activity.name} in bag')
 
     else:
+        bag[item_id]['date'] = date
         bag.pop(item_id)
         messages.success(request, f'Removed {activity.name} in bag')
         

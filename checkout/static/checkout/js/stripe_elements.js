@@ -5,8 +5,9 @@
     CSS from here: 
     https://stripe.com/docs/stripe-js
 */
-
+console.log("script loaded")
 var stripePublicKey = $('#id_stripe_public_key').text().slice(1, -1);
+console.log(stripePublicKey)
 var clientSecret = $('#id_client_secret').text().slice(1, -1);
 var stripe = Stripe(stripePublicKey);
 var elements = stripe.elements();

@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'activity/css/reviews.css' %}">
+{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center mt-3">
+            <h2 class="logo-font">{{activity.name}} Reviews</h2>
+            <hr class="w-50 mb-1">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                <div class="image-container my-5">
+                    {% if activity.image %}
+                        <a href="{{ activity.image.url }}" target="_blank">
+                            <img class="card-img-top img-fluid activity_detail_image" src="{{ activity.image.url }}" alt="{{ activity.name }}">
+                        </a>
+                        {% else %}
+                        <a href="">
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ activity.name }}">
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    {% for review in reviews %}
+                    {{reivews.title}}
+                    {{reviews.rating}}
+                    {{reviews.description}}
+                    {% endfor %}
+                </div>
+
+                <div class="container">
+                    <h1>Submit your Review</h1>
+                    <div class="rating">
+                        <span id="rating">0</span>/5
+                    </div>
+                    <div class="stars" id="stars">
+                        <span class="star" data-value="1">★</span>
+                        <span class="star" data-value="2">★</span>
+                        <span class="star" data-value="3">★</span>
+                        <span class="star" data-value="4">★</span>
+                        <span class="star" data-value="5">★</span>
+                    </div>
+                    <p>Share your review:</p>
+                    <textarea id="review"
+                              placeholder="Write your review here">
+                    </textarea>
+                    <hr>
+                    <button id="submit">Submit</button>
+                    <div class="reviews" id="reviews">
+                    </div>
+                </div>
+            </div>
+{% endblock %}
+
+{% block postloadjs %}
+    <script src="{% static 'activity/js/reviews.js' %}"></script>
+{% endblock %}

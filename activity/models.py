@@ -1,4 +1,5 @@
 from django.db import models
+from profiles.models import UserProfile
 
 
 class Category(models.Model):
@@ -41,3 +42,18 @@ class Activity(models.Model):
         return self.name
 
 
+
+class Reviews(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Reviews'
+
+    activity_name = models.ForeignKey('Activity', null=True, blank=True, on_delete=models.SET_NULL)
+    review_title = models.CharField(max_length=150, null=True, blank=True)
+    review_rating = models.IntegerField()
+    review_description = models.CharField(max_length=500, null=True, blank=True)
+    created = models.DateField(auto_now_add=True)
+
+
+    def __str__(self):
+        return self.activity_name 

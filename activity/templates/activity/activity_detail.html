@@ -37,7 +37,7 @@
                     <i class="far fa-clock"></i> Duration: {{ activity.duration}} hours
                     <br>
                     {% if activity.rating %}
-                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ activity.rating }} / 5</small>
+                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ activity.rating }} / 5 <a href="{% url 'reviews' activity.id %}" class="rating">(Click for reviews)</a></small>
                     {% else %}
                         <small class="text-muted">No Rating</small>
                     {% endif %}

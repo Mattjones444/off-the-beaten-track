@@ -77,3 +77,16 @@ def activity_detail(request, activity_id):
     }
 
     return render(request, 'activity/activity_detail.html', context)
+
+
+
+def reviews(request, activity_id):
+    """ A view to show the reviews page """
+
+    activity = get_object_or_404(Activity, pk=activity_id)
+    
+    context = {
+        'activity': activity,
+    }
+
+    return render(request, 'activity/reviews.html', context)

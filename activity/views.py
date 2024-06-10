@@ -84,9 +84,24 @@ def reviews(request, activity_id):
     """ A view to show the reviews page """
 
     activity = get_object_or_404(Activity, pk=activity_id)
+    review = None
+
+    if request.method == 'POST':
+
+        review = {
+            'username': request.POST['username'],
+            'review': request.POST['review'],
+
+        }
+        
+        print(review)
+
+
+
     
     context = {
         'activity': activity,
+        'review': review,
     }
 
     return render(request, 'activity/reviews.html', context)

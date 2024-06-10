@@ -18,11 +18,11 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 text-center mt-3">
-            <h2 class="logo-font">{{activity.name}} Reviews</h2>
+            <h2 class="reviews_header logo-font">{{activity.name}} Reviews</h2>
             <hr class="w-50 mb-1">
             </div>
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-                <div class="image-container my-5">
+                <div class="image-container">
                     {% if activity.image %}
                         <a href="{{ activity.image.url }}" target="_blank">
                             <img class="card-img-top img-fluid activity_detail_image" src="{{ activity.image.url }}" alt="{{ activity.name }}">
@@ -35,16 +35,10 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="col-12 col-md-6 col-lg-4">
-                    {% for review in reviews %}
-                    {{reivews.title}}
-                    {{reviews.rating}}
-                    {{reviews.description}}
-                    {% endfor %}
-                </div>
-
-                <div class="container">
+                <div class="review_container">
                     <h1>Submit your Review</h1>
+                    <form id="review-form" method="POST" action="{% url 'reviews' activity.id %}">
+                    {% csrf_token %}
                     <div class="rating">
                         <span id="rating">0</span>/5
                     </div>
@@ -55,17 +49,48 @@
                         <span class="star" data-value="4">★</span>
                         <span class="star" data-value="5">★</span>
                     </div>
+                    <p>Username:</p> <textarea type="text" id="username" name="username"></textarea>
                     <p>Share your review:</p>
-                    <textarea id="review"
-                              placeholder="Write your review here">
+                    <textarea id="review" type="text" name="review" placeholder="Write your review here">
                     </textarea>
                     <hr>
-                    <button id="submit">Submit</button>
-                    <div class="reviews" id="reviews">
-                    </div>
+                    <button id="submit" value="submit">Submit</button>
+                    </form>
                 </div>
             </div>
-{% endblock %}
+            <hr class="line-break w-50 mb-1">
+        </div>
+
+            <section class="all_reviews">
+                <div class="col-12"
+                    <div class="row">
+                        <h2 class="logo-font text-center mt-3">Customer Reviews of {{activity.name}}</h2>
+                        </div>
+                    </div>
+                    
+            
+                    <div class="container mt-4">
+                        {% for review in reviews %}
+                        <div class="row">
+                          <div class="col-sm">
+                            <i class="fas fa-user"></i> {{user}}
+                          </div>
+                          <div class="col-sm">
+                            {{review.rating}}
+                          </div>
+                          <div class="col-sm">
+                            {{review.description}}
+                          </div>
+                        </div>
+                        {% endfor %}
+                      </div>
+                         
+            
+                
+            </section>
+
+    {% endblock %}
+
 
 {% block postloadjs %}
     <script src="{% static 'activity/js/reviews.js' %}"></script>

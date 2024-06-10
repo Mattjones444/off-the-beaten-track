@@ -31,37 +31,7 @@ stars.forEach((star) => {
         star.classList.add("selected");
     });
 });
- 
-submitBtn.addEventListener("click", () => {
-    const review = reviewText.value;
-    const userRating = parseInt(rating.innerText);
- 
-    if (!userRating || !review) {
-        alert(
-"Please select a rating and provide a review before submitting."
-             );
-        return;
-    }
- 
-    if (userRating > 0) {
-        const reviewElement = document.createElement("div");
-        reviewElement.classList.add("review");
-        reviewElement.innerHTML = 
-`<p><strong>Rating: ${userRating}/5</strong></p><p>${review}</p>`;
-        reviewsContainer.appendChild(reviewElement);
- 
-        // Reset styles after submitting
-        reviewText.value = "";
-        rating.innerText = "0";
-        stars.forEach((s) => s.classList.remove("one", 
-                                                "two", 
-                                                "three", 
-                                                "four", 
-                                                "five", 
-                                                "selected"));
-    }
-});
- 
+
 function getStarColorClass(value) {
     switch (value) {
         case 1:

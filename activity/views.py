@@ -1,7 +1,8 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from .models import Category, Activity
+from .models import Category, Activity, Reviews
+from .forms import ReviewForm
 from django.db.models.functions import Lower
 
 
@@ -79,29 +80,23 @@ def activity_detail(request, activity_id):
     return render(request, 'activity/activity_detail.html', context)
 
 
-
 def reviews(request, activity_id):
-    """ A view to show the reviews page """
-
     activity = get_object_or_404(Activity, pk=activity_id)
-    review = None
-
-    if request.method == 'POST':
-
-        review = {
-            'username': request.POST['username'],
-            'review': request.POST['review'],
-
-        }
-        
-        print(review)
-
-
-
     
-    context = {
-        'activity': activity,
-        'review': review,
-    }
+    if request.method == 'POST':
+        print("POST data:", request.POST)
+        form = ReviewForm(request.POST)
+        if form.is_valid():
+            review = form.save(commit=False)
+            review.activity_name_id = activity_id
+            review.save()
+            messages.success(request, f"Thank you for leaving a review on {activity.name}")
+            return redirect(reverse('reviews', args=[activity_id]))
+        else:
+            print("Form errors:", form.errors)
+    else:
+        form = ReviewForm()
 
-    return render(request, 'activity/reviews.html', context)
+    reviews = Reviews.objects.filter(activity_name_id=activity_id)
+
+    return render(request, 'activity/reviews.html', {'form': form, 'activity_id': activity_id, 'activity': activity, 'reviews': reviews})

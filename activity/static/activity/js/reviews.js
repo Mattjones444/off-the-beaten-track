@@ -32,6 +32,15 @@ stars.forEach((star) => {
     });
 });
 
+document.querySelectorAll('.star').forEach(star => {
+    star.addEventListener('click', function() {
+        let rating = this.getAttribute('data-value');
+        document.getElementById('rating').innerText = rating;
+        document.getElementById('review_rating').value = rating;
+        console.log("Rating set to:", rating); // Debugging line
+    });
+});
+
 function getStarColorClass(value) {
     switch (value) {
         case 1:

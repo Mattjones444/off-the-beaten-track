@@ -5,10 +5,16 @@
     padding-left: 45px;
     padding-bottom: 15px;
     margin-top: 50px;
+    margin-left: 30px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     width: 400px;
+}
+
+.my_review{
+    border: #000 1px solid;
+    padding-top: 10px;
 }
  
 h1 {
@@ -22,6 +28,16 @@ h1 {
 
 .image-container{
     margin-top: 6rem;
+}
+
+.review_container2{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 650px;
+    margin-top: 20px;
+
+
 }
  
 .rating {
@@ -98,3 +114,4 @@ button:hover {
 .review p {
     margin: 0;
 }
+

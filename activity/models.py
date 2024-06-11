@@ -49,11 +49,11 @@ class Reviews(models.Model):
         verbose_name_plural = 'Reviews'
 
     activity_name = models.ForeignKey('Activity', null=True, blank=True, on_delete=models.SET_NULL)
-    review_title = models.CharField(max_length=150, null=True, blank=True)
+    name = models.CharField(max_length=50, null=True, blank=True)
     review_rating = models.IntegerField()
-    review_description = models.CharField(max_length=500, null=True, blank=True)
+    review_description = models.CharField(max_length=500, default=None, null=False, blank=False)
     created = models.DateField(auto_now_add=True)
 
 
     def __str__(self):
-        return self.activity_name 
+        return self.name

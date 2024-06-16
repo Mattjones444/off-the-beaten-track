@@ -63,45 +63,44 @@
         </div>
     </div>
 
-        <section class="all_reviews">
-            <div class="col-12">
-                <div class="row">
+    <section class="all_reviews">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
                     <h2 class="logo-font text-center mt-3">Customer Reviews of {{activity.name}}</h2>
                 </div>
             </div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="review_container2">
-                        <div class="col-lg-10 col-xl-8"> 
-                            <!-- Your review container goes here -->
-                            <div class="reviews">
-                                {% for review in reviews %}
-                                <div class="container my_review text-center">
-                                    <div class="row">
-                                        <div class="col-12 d-flex">
-                                            <i class="fas fa-user"></i> {{ review.name }}. <i class="far fa-clock ml-auto"></i>{{ review.created }}
-                                        </div>
-                                        <hr class="w-100">
-                                        <div class="col-12 d-flex">
-                                            <div class="rating">
-                                                {% for reviews in review.rating%}
-                                                <span>&#9733;</span>
-                                                {% endfor %}
-                                            </div>
-                                        </div>
-                                        <div class="col-12 d-flex">
-                                            {{ review.review_description }}
-                                        </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-8 review_container2">
+                    <div class="reviews">
+                        {% for review in reviews %}
+                        <div class="container my_review text-center">
+                            <div class="row">
+                                <div class="col-12 d-flex">
+                                    <i class="fas fa-user"></i> {{ review.name }}. <i class="far fa-clock ml-auto"></i>{{ review.created }}
+                                </div>
+                                <hr class="w-100">
+                                <div class="col-12 d-flex">
+                                    <div class="rating">
+                                        {% for reviews in review.rating %}
+                                        <span>&#9733;</span>
+                                        {% endfor %}
                                     </div>
                                 </div>
-                                <hr class="w-50">
-                                {% endfor %}
+                                <div class="col-12 d-flex">
+                                    {{ review.review_description }}
+                                </div>
                             </div>
                         </div>
+                        <hr class="w-50">
+                        {% endfor %}
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
     {% endblock %}
 

@@ -157,3 +157,16 @@ def edit_product(request, activity_id):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def delete_product(request, activity_id):
+    """ Delete a product from the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
+    activity = get_object_or_404(Activity, pk=activity_id)
+    activity.delete()
+    messages.success(request, 'Product deleted!')
+    return redirect(reverse('activity'))

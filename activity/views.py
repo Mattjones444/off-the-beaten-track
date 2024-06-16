@@ -128,3 +128,32 @@ def add_product(request):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def edit_product(request, activity_id):
+    """ Edit a product in the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
+    activity = get_object_or_404(Activity, pk=activity_id)
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES, instance=activity)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated product!')
+            return redirect(reverse('activity_detail', args=[activity.id]))
+        else:
+            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+    else:
+        form = ProductForm(instance=activity)
+        messages.info(request, f'You are editing {activity.name}')
+
+    template = 'activity/edit_product.html'
+    context = {
+        'form': form,
+        'activity': activity,
+    }
+
+    return render(request, template, context)

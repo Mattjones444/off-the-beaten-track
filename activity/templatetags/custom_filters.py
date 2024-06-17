@@ -6,7 +6,11 @@ register = template.Library()
 
 @register.filter
 def get_star_range(rating):
-    logger.debug(f"Rating: {rating}")
-    star_range = range(int(rating))
-    logger.debug(f"Star Range: {star_range}")
-    return star_range
+    try:
+        logger.debug(f"Rating: {rating}")
+        star_range = range(int(rating) if rating is not None else 0)
+        logger.debug(f"Star Range: {star_range}")
+        return star_range
+    except (ValueError, TypeError) as e:
+        logger.error(f"Invalid rating value: {rating} - {e}")
+        return range(0)

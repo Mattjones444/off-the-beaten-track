@@ -115,3 +115,30 @@ button:hover {
     margin: 0;
 }
 
+.review-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.review-card .username {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.review-card .date {
+    color: #777;
+    font-size: 0.9em;
+}
+.review-card .stars {
+    color: #f5c518;
+}
+.review-card .stars span {
+    font-size: 1.2em;
+}
+.review-card .review-description {
+    margin-top: 15px;
+    font-size: 18px;
+}
+

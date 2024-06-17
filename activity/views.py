@@ -83,7 +83,9 @@ def activity_detail(request, activity_id):
 
 
 def reviews(request, activity_id):
-    activity = get_object_or_404(Activity, pk=activity_id)
+    activity = get_object_or_404(Activity, pk=activity_id) 
+    reviews = Reviews.objects.filter(activity_name_id=activity_id)
+    
     
     if request.method == 'POST':
         print("POST data:", request.POST)
@@ -93,15 +95,15 @@ def reviews(request, activity_id):
             review.activity_name_id = activity_id
             review.save()
             messages.success(request, f"Thank you for leaving a review on {activity.name}")
+            print(review)
             return redirect(reverse('reviews', args=[activity_id]))
         else:
             print("Form errors:", form.errors)
     else:
         form = ReviewForm()
 
-    reviews = Reviews.objects.filter(activity_name_id=activity_id)
-
     return render(request, 'activity/reviews.html', {'form': form, 'activity_id': activity_id, 'activity': activity, 'reviews': reviews})
+
 
 
 @login_required

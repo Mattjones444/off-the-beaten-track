@@ -38,6 +38,7 @@ def checkout(request):
     
 
     if request.method == 'POST':
+        
         bag = request.session.get('bag', {})
 
         form_data = {
@@ -65,9 +66,6 @@ def checkout(request):
                         order_line_item.save()
                     else:
                             quantity = item_data['quantity']
-                            # Debugging and validation print statements
-                            print(f"Processing item: {item_id}, quantity: {quantity}")
-                            print(f"Type of quantity: {type(quantity)}")
                             
                             if isinstance(quantity, str):
                                 # Check if the string can be converted to an integer
@@ -99,10 +97,6 @@ def checkout(request):
                     )
                     order.delete()
                     return redirect(reverse('view_bag'))
-                #except ValueError as e:
-                    #messages.error(request, str(e))
-                    #order.delete()
-                    #return redirect(reverse('view_bag'))
 
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_number]))
@@ -138,6 +132,8 @@ def checkout(request):
                 })
             except UserProfile.DoesNotExist:
                 order_form = OrderForm()
+        else:
+            order_form = OrderForm()
         
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. Did you forget to set it in your environment?')

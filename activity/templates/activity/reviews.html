@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
 
-
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'activity/css/reviews.css' %}">
 {% endblock %}
@@ -19,8 +18,8 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 text-center mt-3">
-            <h2 class="reviews_header logo-font">{{activity.name}} Reviews</h2>
-            <hr class="w-50 mb-1">
+                <h2 class="reviews_header logo-font">{{activity.name}} Reviews</h2>
+                <hr class="w-50 mb-1">
             </div>
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container">
@@ -28,7 +27,7 @@
                         <a href="{{ activity.image.url }}" target="_blank">
                             <img class="card-img-top img-fluid activity_detail_image" src="{{ activity.image.url }}" alt="{{ activity.name }}">
                         </a>
-                        {% else %}
+                    {% else %}
                         <a href="">
                             <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ activity.name }}">
                         </a>
@@ -36,7 +35,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="review_container">
+                <div class="review_container shadow">
                     <h1>Submit your Review</h1>
                     <form id="review-form" method="POST" action="{% url 'reviews' activity_id %}">
                         {% csrf_token %}
@@ -64,8 +63,6 @@
         </div>
     </div>
 
-    
-
 <section class="all_reviews">
     <div class="container">
         <div class="row">
@@ -76,29 +73,33 @@
     </div>
 
     <div class="container">
-        {% for review in reviews %}
-        <div class="review-card">
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="username">{{ review.name }}</div>
-                <div class="date">{{ review.created }}</div>
-            </div>
-            <hr class="w-100">
-            <div class="stars">
-                {% load custom_filters %}
-                {% for _ in review.review_rating|get_star_range %}
-                <span>&#9733;</span>
-                {% endfor %}
-            </div>
-            <div class="review-description">
-                {{ review.review_description }}
-            </div>
-        </div>
-        {% endfor %}
+        {% if reviews %}
+            {% for review in reviews %}
+                <div class="review-card shadow">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="username"><i class="fas fa-user-circle user"></i> {{ review.name }}</div>
+                        <div class="date">{{ review.created }}</div>
+                    </div>
+                    <hr class="w-100">
+                    <div class="stars">
+                        {% load custom_filters %}
+                        {% for _ in review.review_rating|get_star_range %}
+                            <span>&#9733;</span>
+                        {% endfor %}
+                    </div>
+                    <div class="review-description">
+                        {{ review.review_description }}
+                    </div>
+                </div>
+                <br>
+            {% endfor %}
+        {% else %}
+            <p class="text-center logo-font">No reviews added yet for {{ activity.name }}</p>
+            <br>
+        {% endif %}
     </div>
 
 {% endblock %}
-
-
 
 {% block postloadjs %}
     <script src="{% static 'activity/js/reviews.js' %}"></script>

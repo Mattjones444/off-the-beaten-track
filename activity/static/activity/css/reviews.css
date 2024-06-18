@@ -1,5 +1,5 @@
 .review_container {
-    background-color: white;
+    background-color: #F7F9F2;
     padding-top: 45px;
     padding-right: 45px;
     padding-left: 45px;
@@ -120,7 +120,7 @@ button:hover {
     border-radius: 8px;
     padding: 20px;
     margin: 20px 0;
-    background-color: #fff;
+    background-color: #F7F9F2;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 .review-card .username {

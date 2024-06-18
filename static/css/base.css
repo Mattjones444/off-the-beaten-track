@@ -10,6 +10,7 @@ body {
     font-family: 'Lato';
 }
 
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -19,12 +20,26 @@ body {
     width: 1.5rem;
 }
 
+.top_nav{
+    background-color: #E1F0DA;
+}
+
+#topnav{
+    background-color: #BFD8AF;
+}
+
 .logo-font {
     text-transform: uppercase;
 }
 
 .main-logo-link {
     width: fit-content;
+}
+
+.logo{
+    height: 40px;
+    width: 40px;
+    background-color: #BFD8AF;
 }
 
 .shop-now-button {
@@ -52,6 +67,10 @@ body {
     color: #000 !important;
 }
 
+hr{
+    background-color:#99BC85;
+}
+
 .border-black {
     border: 1px solid black !important;
 }
@@ -62,7 +81,7 @@ body {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: white;
+	background: #E1F0DA;
 	z-index: -1;
 }
 
@@ -86,6 +105,10 @@ a.category-badge > span.badge:hover {
     color: #fff !important;
 }
 
+.user{
+    font-size: 40px;
+    margin-right: 10px;
+}
 
 /* -------------------------------- Bootstrap Toasts */
 

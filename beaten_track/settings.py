@@ -31,11 +31,9 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG')
 
-<<<<<<< HEAD
-ALLOWED_HOSTS = ['8000-mattjones44-offthebeate-pl58ipzsf8f.ws.codeinstitute-ide.net']
-=======
-ALLOWED_HOSTS = ['8000-mattjones44-offthebeate-pl58ipzsf8f.ws.codeinstitute-ide.net']
->>>>>>> origin/main
+
+ALLOWED_HOSTS = ['8000-mattjones44-offthebeate-74gyt5ebjfl.ws-eu114.gitpod.io']
+
 
 
 # Application definition

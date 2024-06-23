@@ -1,1 +1,1 @@
-web:gunicorn beaten_track.wsgi:application
+web: gunicorn off-the-beaten-track.wsgi:application

@@ -23,7 +23,7 @@ h1 {
 }
 
 .reviews_header{
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .image-container{
@@ -141,3 +141,12 @@ button:hover {
     margin-top: 15px;
     font-size: 18px;
 }
+
+/* -------------------------------- Media Queries */
+
+@media (max-width:576px) {
+    .reviews_header{
+        margin-top:150px;
+    }
+}
+

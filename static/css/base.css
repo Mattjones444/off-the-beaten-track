@@ -329,6 +329,10 @@ footer{
     font-size: 40px;
     font-weight: bold;
 }
+
+.activities-header{
+    margin-top: 150px;
+}
 }
 
 /* Slightly larger container on xl screens */

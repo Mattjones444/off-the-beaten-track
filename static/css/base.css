@@ -315,6 +315,22 @@ footer{
 
 /* -------------------------------- Media Queries */
 
+
+@media (max-width:576px) {
+    body {background: url('/media/hero_image.png') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #555;
+    font-family: 'Lato';
+}
+
+.logo-font {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+}
+}
+
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
   .container {

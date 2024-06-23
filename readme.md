@@ -1,6 +1,6 @@
 \# Off the Beaten Track Milestone 4 Full Stack Development Project
 
-![Website Mock Up](level_up/static/images/mockup.png)
+![Website Mock Up](/media/readme/mockup.jpg)
 
 \# Purpose
 
@@ -159,7 +159,7 @@ As Off the Beaten Track is a service, the app design shapes future brand recogni
 
 \### Colour Scheme
 
-![Palette](/level_up/static/readme/colorpalette.png)
+![Palette](media/readme/colour-pallette.png)
 
 The conventional, modern, solid colour palette choice serves to engender trust, academia and professionalism, whilst maintaining a modern feel. 
 

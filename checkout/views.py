@@ -2,19 +2,15 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpR
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
-
 from .forms import OrderForm
 from .models import Order, OrderLineItem
 from activity.models import Activity
 from profiles.models import UserProfile
 from profiles.forms import UserProfileForm
 from bag.contexts import grand_total
-
 import stripe
 import json
 from decimal import Decimal
-
-
 @require_POST
 def cache_checkout_data(request):
     try:
@@ -30,15 +26,13 @@ def cache_checkout_data(request):
         messages.error(request, 'Sorry, your payment cannot be \
             processed right now. Please try again later.')
         return HttpResponse(content=e, status=400)
-
-
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
-    
+
 
     if request.method == 'POST':
-        
+
         bag = request.session.get('bag', {})
 
         form_data = {
@@ -66,7 +60,10 @@ def checkout(request):
                         order_line_item.save()
                     else:
                             quantity = item_data['quantity']
-                            
+                            # Debugging and validation print statements
+                            print(f"Processing item: {item_id}, quantity: {quantity}")
+                            print(f"Type of quantity: {type(quantity)}")
+
                             if isinstance(quantity, str):
                                 # Check if the string can be converted to an integer
                                 print(f'quantity: {quantity}')
@@ -81,7 +78,6 @@ def checkout(request):
                                 pass
                             else:
                                 raise ValueError(f"Invalid quantity type: {type(quantity)}")
-
                             print(f"Validated quantity: {quantity}, type: {type(quantity)}")
                             
                             order_line_item = OrderLineItem(
@@ -97,6 +93,10 @@ def checkout(request):
                     )
                     order.delete()
                     return redirect(reverse('view_bag'))
+                #except ValueError as e:
+                    #messages.error(request, str(e))
+                    #order.delete()
+                    #return redirect(reverse('view_bag'))
 
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_number]))
@@ -107,7 +107,6 @@ def checkout(request):
         if not bag:
             messages.error(request, "There's nothing in your bag at the moment")
             return redirect(reverse('activity'))
-
         current_bag = grand_total(request)
         total = current_bag['grand_total']
         stripe_total = round(total * 100)
@@ -116,7 +115,6 @@ def checkout(request):
             amount=stripe_total,
             currency=settings.STRIPE_CURRENCY,
         )
-
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)
@@ -134,20 +132,16 @@ def checkout(request):
                 order_form = OrderForm()
         else:
             order_form = OrderForm()
-        
+
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. Did you forget to set it in your environment?')
-
     template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
         'stripe_public_key': stripe_public_key,
         'client_secret': intent.client_secret if intent else None,
     }
-
     return render(request, template, context)
-
-
 def checkout_success(request, order_number):
     """
     Handle successful checkouts
@@ -155,13 +149,11 @@ def checkout_success(request, order_number):
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
     messages.success(request, f'Order successfully processed! Your order number is {order_number}. A confirmation email will be sent to {order.email}.')
-
     if request.user.is_authenticated:
         profile = UserProfile.objects.get(user=request.user)
         # Attach the user's profile to the order
         order.user_profile = profile
         order.save()
-
         # Save the user's info
         if save_info:
             profile_data = {
@@ -175,13 +167,10 @@ def checkout_success(request, order_number):
             user_profile_form = UserProfileForm(profile_data, instance=profile)
             if user_profile_form.is_valid():
                 user_profile_form.save()
-
     if 'bag' in request.session:
         del request.session['bag']
-
     template = 'checkout/checkout_success.html'
     context = {
         'order': order,
     }
-
     return render(request, template, context)

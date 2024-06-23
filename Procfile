@@ -1,0 +1,1 @@
+web:gunicorn beaten_track.wsgi:application

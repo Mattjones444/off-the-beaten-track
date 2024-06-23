@@ -31,7 +31,11 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG')
 
-ALLOWED_HOSTS = ['mattjones444 off-the-beaten-track.herokuapp.com', 'localhost']
+<<<<<<< HEAD
+ALLOWED_HOSTS = ['8000-mattjones44-offthebeate-pl58ipzsf8f.ws.codeinstitute-ide.net']
+=======
+ALLOWED_HOSTS = ['8000-mattjones44-offthebeate-pl58ipzsf8f.ws.codeinstitute-ide.net']
+>>>>>>> origin/main
 
 
 # Application definition

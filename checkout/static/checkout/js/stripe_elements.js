@@ -100,6 +100,10 @@ form.addEventListener('submit', function(ev) {
                 $('#submit-button').attr('disabled', false);
             } else {
                 if (result.paymentIntent.status === 'succeeded') {
+<<<<<<< HEAD
+=======
+                    console.log('Payment succeeded, submitting the form.');
+>>>>>>> origin/main
                     form.submit();
                 }
             }

@@ -21,7 +21,8 @@
                 <h2 class="reviews_header logo-font">{{activity.name}} Reviews</h2>
                 <hr class="w-50 mb-1">
             </div>
-            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            <!-- Centering image on small devices -->
+            <div class="col-12 col-md-6 col-lg-4 offset-lg-2 d-flex justify-content-center mb-3 mb-md-0">
                 <div class="image-container">
                     {% if activity.image %}
                         <a href="{{ activity.image.url }}" target="_blank">
@@ -34,8 +35,9 @@
                     {% endif %}
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="review_container shadow">
+            <!-- Centering review container on small devices -->
+            <div class="col-12 col-md-6 col-lg-4 col-sm-12 d-flex justify-content-center mb-3 mb-md-0">
+                <div class="review_container shadow w-100 w-md-auto">
                     <h1>Submit your Review</h1>
                     <form id="review-form" method="POST" action="{% url 'reviews' activity_id %}">
                         {% csrf_token %}
@@ -58,7 +60,6 @@
                         <button id="submit" value="submit">Submit</button>
                     </form>
                 </div>
-                <hr class="line-break w-50 mb-1">
             </div>
         </div>
     </div>
@@ -98,8 +99,11 @@
             <br>
         {% endif %}
     </div>
+</section>
 
 {% endblock %}
+
+
 
 {% block postloadjs %}
     <script src="{% static 'activity/js/reviews.js' %}"></script>

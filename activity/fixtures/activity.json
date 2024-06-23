@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  [
       {
         "model": "activity.activity",
@@ -478,5 +479,487 @@
         "duration": 4.0,
         "image": "temple.jpeg"
       }
+=======
+[
+  {
+    "model": "activity.activity",
+    "pk": 1,
+    "fields": {
+    "category": 1,
+    "sku": "FR-CHAM-001",
+    "name": "Mountain Climbing",
+    "description": "Experience the thrill of mountain climbing in the majestic Chamonix mountains.",
+    "country": "France",
+    "price": 150,
+    "group_size": 4,
+    "rating":2.3,
+    "duration": 6.0,
+    "image": "alpsguidedtour.jpeg"
+>>>>>>> origin/main
     }
+  },
+  {
+    "model": "activity.activity",
+    "pk": 2,
+    "fields": {
+    "category": 3,
+    "sku": "IT-VEN-003",
+    "name": "Gondola Ride",
+    "description": "Enjoy a romantic gondola ride through the canals of Venice.",
+    "country": "Italy",
+    "price": 80,
+    "group_size": 2,
+    "rating":3.2,
+    "duration": 1.0,
+    "image": "gondola.jpeg"
+    }
+  },
+  {
+    "model": "activity.activity",
+    "pk": 3,
+    "fields": {
+    "category": 4,
+    "sku": "ES-BAR-004",
+    "name": "Historic City Tour",
+    "description": "Discover the rich history and culture of Barcelona on a guided city tour.",
+    "country": "Spain",
+    "price": 30,
+    "group_size": 10,
+    "rating":4.3,
+    "duration": 3.0,
+    "image": "barcelonatour.jpeg"
+    }
+  },
+  {
+    "model": "activity.activity",
+    "pk": 4,
+    "fields": {
+    "category": 3,
+    "sku": "GR-SAN-005",
+    "name": "Sunset Cruise",
+    "description": "Sail into the sunset on a romantic cruise around Santorini.",
+    "country": "Greece",
+    "price": 100,
+    "group_size": 2,
+    "rating":1.4,
+    "duration": 2.0,
+    "image": "santorini.jpeg"
+    }
+  },
+  {
+    "model": "activity.activity",
+    "pk": 5,
+    "fields": {
+    "category": 1,
+    "sku": "TR-CAP-006",
+    "name": "Hot Air Balloon Ride",
+    "description": "Float above the unique landscape of Cappadocia on a hot air balloon ride.",
+    "country": "Turkey",
+    "price": 250,
+    "group_size": 3,
+    "rating":2.5,
+    "duration": 1.5,
+    "image": "balloonsturkey"
+    }
+  },
+  {
+    "model": "activity.activity",
+    "pk": 6,
+    "fields": {
+    "category": 2,
+    "sku": "HR-DUB-007",
+    "name": "Sea Kayaking Tour",
+    "description": "Explore the stunning coastline of Dubrovnik on a sea kayaking adventure.",
+    "country": "Croatia",
+    "price": 70,
+    "group_size": 8,
+    "rating":4.6,
+    "duration": 3.0,
+    "image": "seakayaking.jpeg"
+    }
+  },
+  {
+    "model": "activity.activity",
+    "pk": 7,
+    "fields": {
+    "category": 4,
+    "sku": "TH-CMA-008",
+    "name": "Elephant Sanctuary Visit",
+    "description": "Visit an ethical elephant sanctuary and learn about these majestic creatures.",
+    "country": "Thailand",
+    "price": 60,
+    "group_size": 15,
+    "rating":3.6,
+    "duration": 5.0,
+    "image": "elephantsanctuary.jpeg"
+    }
+  },
+  {
+    "model": "activity.activity",
+    "pk": 8,
+    "fields": {
+    "category": 1,
+    "sku": "IN-RAJ-009",
+    "name": "Camel Safari",
+    "description": "Experience the desert landscape of Rajasthan on a camel safari.",
+    "country": "India",
+    "price": 80,
+    "group_size": 4,
+    "rating":3.7,
+    "duration": 6.0,
+    "image": "camelsafari.jpeg"
+    }
+  },
+  {
+    "model": "activity.activity",
+    "pk": 9,
+    "fields": {
+    "category": 2,
+    "sku": "DE-BAV-002",
+    "name": "Hiking",
+    "description": "Explore the beautiful Bavarian Alps on a guided hiking tour.",
+    "country": "Germany",
+    "price": 50,
+    "group_size": 5,
+    "rating":4.2,
+    "duration": 8.0,
+    "image": "alpsguidedtour.jpeg"
+    }
+  },
+  {
+    "model": "activity.activity",
+    "pk": 10,
+    "fields": {
+    "category": 3,
+    "sku": "AU-SYD-010",
+    "name": "Harbour Bridge Climb",
+    "description": "Climb to the top of Sydney Harbour Bridge for breathtaking views of the city.",
+    "country": "Australia",
+    "price": 300,
+    "group_size": 5,
+    "rating":2.9,
+    "duration": 3.5,
+    "image": "sydney.webp"
+    }
+  },
+  {
+    "model": "activity.activity",
+    "pk": 11,
+    "fields": {
+    "category": 4,
+    "sku": "ID-BAL-011",
+    "name": "Cultural Village Tour",
+    "description": "Immerse yourself in Balinese culture with a visit to a traditional village.",
+    "country": "Indonesia",
+    "price": 40,
+    "group_size": 10,
+    "rating":4.5,
+    "duration": 4.0,
+    "image": "indovillagetour.jpeg"
+    }
+  },
+  {
+    "model": "activity.activity",
+    "pk": 12,
+    "fields": {
+    "category": 4,
+    "sku": "FR-LOI-012",
+    "name": "Castle Tour",
+    "description": "Explore the stunning castles of the Loire Valley on a guided tour.",
+    "country": "France",
+    "price": 50,
+    "group_size": 12,
+    "rating":4.1,
+    "duration": 5.0,
+    "image": "castletour.jpeg"
+    }
+  },
+  {
+    "model": "activity.activity",
+    "pk": 13,
+    "fields": {
+    "category": 1,
+    "sku": "DE-BLK-013",
+    "name": "Cycling Tour",
+    "description": "Cycle through the picturesque landscapes of the Black Forest.",
+    "country": "Germany",
+    "price": 60,
+    "group_size": 6,
+    "rating":3.3,
+    "duration": 4.0,
+    "image": "blackforesttour.jpeg"
+    }
+  },
+  {
+    "model": "activity.activity",
+    "pk": 14,
+    "fields": {
+    "category": 3,
+    "sku": "IT-TUS-014",
+    "name": "Wine Tasting Tour",
+    "description": "Savor the flavors of Tuscany on a guided wine tasting tour.",
+    "country": "Italy",
+    "price": 120,
+    "group_size": 4,
+    "rating":3.3,
+    "duration": 3.0,
+    "image": "winetastingtour.jpeg"
+    }
+  },
+  {
+    "model": "activity.activity",
+    "pk": 15,
+    "fields": {
+    "category": 4,
+    "sku": "ES-MAD-015",
+    "name": "Art Museum Tour",
+    "description": "Visit the renowned art museums of Madrid on a guided tour.",
+    "country": "Spain",
+    "price": 25,
+    "group_size": 8,
+    "rating":3.0,
+    "duration": 2.0,
+    "image": "artmuseumtour.jpeg"
+    }
+  },
+  {
+    "model": "activity.activity",
+    "pk": 16,
+    "fields": {
+    "category": 2,
+    "sku": "GR-MYK-016",
+    "name": "Beach Day",
+    "description": "Relax and enjoy a day at the beautiful beaches of Mykonos.",
+    "country": "Greece",
+    "price": 20,
+    "group_size": 20,
+    "rating":3.9,
+    "duration": 6.0,
+    "image": "beach.jpeg"
+    }
+  },
+  {
+    "model": "activity.activity",
+    "pk": 17,
+    "fields": {
+    "category": 4,
+    "sku": "TR-IST-017",
+    "name": "Bazaar Shopping Tour",
+    "description": "Explore the bustling bazaars of Istanbul on a guided shopping tour.",
+    "country": "Turkey",
+    "price": 30,
+    "group_size": 10,
+    "rating":4.1,
+    "duration": 4.0,
+    "image": "turkeymarket.jpeg"
+    }
+  },
+  { 
+    "model": "activity.activity",
+    "pk": 18,
+    "fields": {
+    "category": 1,
+    "sku": "HR-PLI-018",
+    "name": "National Park Hiking",
+    "description": "Hike through the stunning landscapes of Plitvice Lakes National Park.",
+    "country": "Croatia",
+    "price": 40,
+    "group_size": 15,
+    "rating":4.0,
+    "duration": 7.0,
+    "image": "lakes.jpg"
+    }
+  },
+  {
+    "model": "activity.activity",
+    "pk": 19,
+    "fields": {
+    "category": 1,
+    "sku": "TH-PHU-019",
+    "name": "Island Hopping Tour",
+    "description": "Explore the beautiful islands around Phuket on a guided tour.",
+    "country": "Thailand",
+    "price": 90,
+    "group_size": 12,
+    "rating":2.8,
+    "duration": 6.0,
+    "image": "phuketislands.jpeg"
+    }
+  },
+  {
+    "model": "activity.activity",
+    "pk": 20,
+    "fields": {
+    "category": 4,
+    "sku": "IN-AGR-020",
+    "name": "Taj Mahal Visit",
+    "description": "Visit the iconic Taj Mahal on a guided tour.",
+    "country": "India",
+    "price": 25,
+    "group_size": 10,
+    "rating":4.7,
+    "duration": 3.0,
+    "image": "tajmahal.avif"
+    }
+  },
+  {
+    "model": "activity.activity",
+    "pk": 21,
+    "fields": {
+    "category": 2,
+    "sku": "AU-GBR-021",
+    "name": "Snorkeling",
+    "description": "Discover the underwater wonders of the Great Barrier Reef on a snorkeling adventure.",
+    "country": "Australia",
+    "price": 150,
+    "group_size": 8,
+    "rating":4.9,
+    "duration": 5.0,
+    "image": "barrierreef.webp"
+    }
+  },
+  {
+    "model": "activity.activity",
+    "pk": 22,
+    "fields": {
+    "category": 1,
+    "sku": "ID-JAV-022",
+    "name": "Volcano Trekking",
+    "description": "Trek to the summit of an active volcano in Java.",
+    "country": "Indonesia",
+    "price": 100,
+    "group_size": 5,
+    "rating":2.5,
+    "duration": 8.0,
+    "image": "javavolcano.webp"
+    }
+  },
+  {
+    "model": "activity.activity",
+    "pk": 23,
+    "fields": {
+    "category": 3,
+    "sku": "FR-PRO-023",
+    "name": "Lavender Field Tour",
+    "description": "Stroll through the fragrant lavender fields of Provence.",
+    "country": "France",
+    "price": 60,
+    "group_size": 4,
+    "rating":4.7,
+    "duration": 3.0,
+    "image": "lavender.avif"
+    }
+  },
+  {
+    "model": "activity.activity",
+    "pk": 24,
+    "fields": {
+    "category": 4,
+    "sku": "DE-BER-024",
+    "name": "Historical Walking Tour",
+    "description": "Learn about Berlin's rich history on a guided walking tour.",
+    "country": "Germany",
+    "price": 15,
+    "group_size": 20,
+    "rating":4.4,
+    "duration": 2.0,
+    "image": "berlinwalking.jpeg"
+    }
+  },
+  {
+    "model": "activity.activity",
+    "pk": 25,
+    "fields": {
+    "category": 4,
+    "sku": "IT-FLO-025",
+    "name": "Art and Architecture Tour",
+    "description": "Explore the art and architecture of Florence on a guided tour.",
+    "country": "Italy",
+    "price": 35,
+    "group_size": 10,
+    "rating":3.6,
+    "duration": 4.0,
+    "image": "florencewalkingtour.jpeg"
+    }
+  },
+  {
+    "model": "activity.activity",
+    "pk": 26,
+    "fields": {
+    "category": 4,
+    "sku": "ES-SEV-026",
+    "name": "Flamenco Show",
+    "description": "Experience the passion of Flamenco with a live show in Seville.",
+    "country": "Spain",
+    "price": 50,
+    "group_size": 15,
+    "rating":3.7,
+    "duration": 2.0,
+    "image": "sevillaflamenco.webp"
+    }
+  },
+  {
+    "model": "activity.activity",
+    "pk": 27,
+    "fields": {
+    "category": 4,
+    "sku": "GR-CRE-027",
+    "name": "Ancient Ruins Tour",
+    "description": "Explore the ancient ruins of Crete on a guided tour.",
+    "country": "Greece",
+    "price": 40,
+    "group_size": 8,
+    "rating":4.9,
+    "duration": 3.0,
+    "image": "greeceruins.jpeg"
+    }
+  },
+  {
+    "model": "activity.activity",
+    "pk": 28,
+    "fields": {
+    "category": 1,
+    "sku": "TR-ANT-028",
+    "name": "River Rafting",
+    "description": "Enjoy the thrill of river rafting in Antalya.",
+    "country": "Turkey",
+    "price": 70,
+    "group_size": 6,
+    "rating":4.7,
+    "duration": 4.0,
+    "image": "rafting.jpeg"
+    }
+  },
+  {
+    "model": "activity.activity",
+    "pk": 29,
+    "fields": {
+    "category": 4,
+    "sku": "HR-SPL-029",
+    "name": "Diocletian's Palace Tour",
+    "description": "Discover the history of Diocletian's Palace on a guided tour.",
+    "country": "Croatia",
+    "price": 20,
+    "group_size": 12,
+    "rating":3.5,
+    "duration": 2.0,
+    "image": "palacetour.jpeg"
+    }
+  },
+  { 
+    "model": "activity.activity",
+    "pk": 30,
+    "fields": {
+    "category": 4,
+    "sku": "TH-BKK-030",
+    "name": "Temple Tour",
+    "description": "Visit the stunning temples of Bangkok on a guided tour.",
+    "country": "Thailand",
+    "price": 40,
+    "group_size": 10,
+    "rating":3.4,
+    "duration": 4.0,
+    "image": "temple.jpeg"
+  }
+}
 ]

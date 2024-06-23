@@ -30,10 +30,10 @@ class Activity(models.Model):
     description = models.TextField()
     country = models.CharField(max_length=254)
     location = models.CharField(max_length=254, null=True)
-    price = models.DecimalField(max_digits=6, decimal_places=2)
-    group_size = models.IntegerField()
+    price = models.DecimalField(max_digits=6, decimal_places=2, null=True)
+    group_size = models.IntegerField(null=True)
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
-    duration = models.DecimalField(max_digits=6, decimal_places=1)
+    duration = models.DecimalField(max_digits=6, decimal_places=1, null=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
 

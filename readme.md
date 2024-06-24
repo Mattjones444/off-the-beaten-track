@@ -250,25 +250,34 @@ Techlologies used during the creation of Lunar Glow include:
 ## Database Design
 
 ```python
-class Product(models.Model):
-    category = models.ForeignKey(
-        "Category", null=True, blank=True, on_delete=models.SET_NULL)
+class Activity(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Activities'
+
+
+    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()
-	scent_profile = models.ForeignKey('scentprofile.ScentProfile', on_delete=models.SET_NULL, null=True, blank=True)
-    sku = models.CharField(max_length=254, null=True, blank=True)
-    price = models.DecimalField(max_digits=6, decimal_places=2)
+    country = models.CharField(max_length=254)
+    location = models.CharField(max_length=254, null=True)
+    price = models.DecimalField(max_digits=6, decimal_places=2, null=True)
+    group_size = models.IntegerField(null=True)
+    rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
+    duration = models.DecimalField(max_digits=6, decimal_places=1, null=True)
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
+
 
     def __str__(self):
         return self.name
 ```
 
-- [DrawSQL](https://drawsql.app/)
+- [DrawSQL](/media/readme/drawsql.png)
 DrawSQL was used to create an ERD to visualise the tables within the database and their relationships.
 
-![screenshot](documentation/erd.png)
+
 
 - Table: **Product**
 
@@ -278,15 +287,19 @@ DrawSQL was used to create an ERD to visualise the tables within the database an
     | | sku | CharField | |
     | | name | CharField | |
     | | description | TextField | |
-	| **FK** | scent_profile | CharField | FK to **ScentProfile** model|
+	| | country | CharField | |
+	| | location | CharField | |
     | | price | DecimalField | |
+	| | group size | IntField | |
+	| | rating | DecimalField | |
+	| | image url | URLField | |
     | | image | ImageField | |
 
 - Table: **Category**
 
   | **PK** | **id** (unique) | Type | Notes |
     | --- | --- | --- | --- |
-    | | name | harField | |
+    | | name | CharField | |
     | | friendly_name | CharField | |
 
 

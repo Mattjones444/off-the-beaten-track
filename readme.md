@@ -326,39 +326,19 @@ DrawSQL was used to create an ERD to visualise the tables within the database an
     | **PK** | **id** (unique) | Type | Notes |
     | --- | --- | --- | --- |
     | **FK** | order | ForeignKey | FK to **Order** model |
-    | **FK** | product | CharField | FK to **Product** model |
+    | **FK** | activity | CharField | FK to **** model |
     | | quantity | IntegerField | | |
     | | lineitem_total | DecimalField | |
  
-- Table: **FAQCategory**
+- Table: **Reviews**
 
     | **PK** | **id** (unique) | Type | Notes |
-    | --- | --- | --- | --- |
+	| --- | --- | --- | --- |
+    | **FK**  | activity name | ForeignKey  | FK to **Activity** model |
     | | name | CharField |  |
-    | | friendly_name | CharField |  |
-  
-- Table: **FAQ_QA**
-
-    | **PK** | **id** (unique) | Type | Notes |
-	| --- | --- | --- | --- |
-    | **FK**  | faq_category | ForeignKey  | FK to **FAQCategory** model |
-    | | question | CharField |  |
-    | | answer | TextField |  |
-  
-- Table: **Subscriber**
-	
-    | **PK** | **id** (unique) | Type | Notes |
-	| --- | --- | --- | --- |
-    |  | email | EmailField |  |
-    | | name | CharField |  |
-    | | timestamp | DateTimeField |  |
-
-- Table: **ScentProfile**
-	
-    | **PK** | **id** (unique) | Type | Notes |
-	| --- | --- | --- | --- |
-    |  | name| CharField |  |
-    | | description | TextField |  |
+    | | review rating | IntegerField |  |
+	| | review description | CharField | |
+	| | created | DateField | |
 
 - Table: **UserProfile**
 

@@ -40,7 +40,7 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Activity views.py | ![screenshot](/media/readme/activityview-validator.png) | Pass: No Errors |
+| Activity views.py | ![screenshot](/media/readme/activity-view.py-validated.png) | Pass: No Errors |
 | Bag views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/d3lyth/lunar_glow/main/profiles/models.py) | ![screenshot](documentation/py-validation-bag-views.png) | Pass: No Errors |
 
 

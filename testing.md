@@ -23,9 +23,7 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 | File | Jigsaw URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| base.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Flunar-glow-77444c493d2e.herokuapp.com) | ![screenshot](documentation/css-validation-base.png) | Pass: No Errors |
-| checkout.css | n/a | ![screenshot](documentation/css-validation-checkout.png) | Pass: No Errors |
-| profile.css | n/a | ![screenshot](documentation/css-validation-profile.png) | Pass: No Errors |
+| base.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Foff-the-beaten-track-b019d3277c26.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) | ![screenshot](/media/readme/basecss-validated.png) | Pass: No Errors |
 
 ### JavaScript
 
@@ -33,8 +31,8 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 | File | Screenshot | Notes |
 | --- | --- | --- |
-| stripe_elements.js | ![screenshot](documentation/js-validation-stripe.png) | Undefined Stripe variable - external library |
-| countryfield.js | ![screenshot](documentation/js-validation-countryfield.png) | Pass: No Errors |
+| stripe_elements.js | ![screenshot](/media/readme/jsvalidator-js.stripe.png) | Undefined Stripe variable - external library |
+| countryfield.js | ![screenshot](/media/readme/jsvalidator-js.countryfield.png) | Let is available in ES6 |
 
 ### Python
 
@@ -42,47 +40,13 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Bag urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/bag/urls.py) | ![screenshot](documentation/py-validation-bag-urls.png) | Pass: No Errors |
+| Activity views.py | ![screenshot](/media/readme/activityview-validator.png) | Pass: No Errors |
 | Bag views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/d3lyth/lunar_glow/main/profiles/models.py) | ![screenshot](documentation/py-validation-bag-views.png) | Pass: No Errors |
-| Bag apps.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/bag/apps.py) | ![screenshot](documentation/py-validation-bag-apps.png) | Pass: No Errors |
-| Bag bagtools.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/bag/templatetags/bag_tools.py) | ![screenshot](documentation/py-validation-bag-bagtools.png) | Pass: No Errors |
-| Checkout admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/checkout/admin.py) | ![screenshot](documentation/py-validation-checkout-admin.png) | Pass: No Errors |
-| Checkout forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/checkout/forms.py) | ![screenshot](documentation/py-validation-checkout-forms.png) | Pass: No Errors |
-| Checkout models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/checkout/models.py) | ![screenshot](documentation/py-validation-checkout-models.png) | Pass: No Errors |
-| Checkout signals.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/checkout/signals.py) | ![screenshot](documentation/py-validation-checkout-signals.png) | Pass: No Errors |
-| Checkout urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/checkout/urls.py) | ![screenshot](documentation/py-validation-checkout-urls.png) | Pass: No Errors |
-| Checkout views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/checkout/views.py) | ![screenshot](documentation/py-validation-checkout-views.png) | Pass: No Errors |
-| Checkout webhook_handler.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/checkout/webhook_handler.py) | ![screenshot](documentation/py-validation-checkout-webhook_handler.png) | Pass: No Errors |
-| Checkout webhooks.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/checkout/webhooks.py) | ![screenshot](documentation/py-validation-checkout-webhooks.png) | Error: Line too long |
-| FAQs admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/faqs/admin.py) | ![screenshot](documentation/py-validation-faqs-admin.png) | Pass: No Errors |
-| FAQs models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/faqs/models.py) | ![screenshot](documentation/py-validation-faqs-models.png) | Pass: No Errors |
-| FAQs urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/faqs/urls.py) | ![screenshot](documentation/py-validation-faqs-urls.png) | Pass: No Errors |
-| FAQs views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/faqs/views.py) | ![screenshot](documentation/py-validation-faqs-views.png) | Pass: No Errors |
-| Home urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/home/urls.py) | ![screenshot](documentation/py-validation-home-urls.png) | Pass: No Errors |
-| Home views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/home/views.py) | ![screenshot](documentation/py-validation-home-views.png) | Pass: No Errors |
-| Lunar Glow settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/lunar_glow/settings.py) | ![screenshot](documentation/py-validation-lunarglow-settings.png) | Pass: No Errors |
-| Lunar Glow urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/lunar_glow/urls.py) | ![screenshot](documentation/py-validation-lunarglow-urls.png) | Pass: No Errors |
-| Newsletter admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/newsletter/admin.py) | ![screenshot](documentation/py-validation-newsletter-admin.png) | Pass: No Errors |
-| Newsletter forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/newsletter/forms.py) | ![screenshot](documentation/py-validation-newsletter-forms.png) | Pass: No Errors |
-| Newsletter models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/newsletter/models.py) | ![screenshot](documentation/py-validation-newsletter-models.png) | Pass: No Errors |
-| Newsletter urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/newsletter/urls.py) | ![screenshot](documentation/py-validation-newsletter-urls.png) | Pass: No Errors |
-| Newsletter views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/newsletter/views.py) | ![screenshot](documentation/py-validation-newsletter-views.png) | Pass: No Errors |
-| Products admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/products/admin.py) | ![screenshot](documentation/py-validation-products-admin.png) | Pass: No Errors |
-| Products forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/products/forms.py) | ![screenshot](documentation/py-validation-products-forms.png) | Pass: No Errors |
-| Products models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/products/models.py) | ![screenshot](documentation/py-validation-products-models.png) | Pass: No Errors |
-| Products urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/products/urls.py) | ![screenshot](documentation/py-validation-products-urls.png) | Pass: No Errors |
-| Products views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/products/views.py) | ![screenshot](documentation/py-validation-products-views.png) | Pass: No Errors |
-| Products widgets.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/products/widgets.py) | ![screenshot](documentation/py-validation-products-widgets.png) | Pass: No Errors |
-| Profiles forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/profiles/forms.py) | ![screenshot](documentation/py-validation-profiles-forms.png) | Pass: No Errors |
-| Profiles models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/profiles/models.py) | ![screenshot](documentation/py-validation-profiles-models.png) | Pass: No Errors |
-| Profiles urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/profiles/urls.py) | ![screenshot](documentation/py-validation-profiles-urls.png) | Pass: No Errors |
-| Profiles views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/profiles/views.py) | ![screenshot](documentation/py-validation-profiles-views.png) | Pass: No Errors |
-| Scent Profile admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/scentprofile/admin.py) | ![screenshot](documentation/py-validation-scentprofile-admin.png) | Pass: No Errors |
-| Scent Profile models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/scentprofile/models.py) | ![screenshot](documentation/py-validation-scentprofile-models.png) | Pass: No Errors |
-| Scent Profile urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/scentprofile/urls.py) | ![screenshot](documentation/py-validation-scentprofile-urls.png) | Pass: No Errors |
-| Scent Profile views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/scentprofile/views.py) | ![screenshot](documentation/py-validation-scentprofile-views.png) | Pass: No Errors |
-| Root Level custom_storages.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/custom_storages.py) | ![screenshot](documentation/py-validation-rootlevel-custom_storages.png) | Pass: No Errors |
-| Root Level manage.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/D3lyth/lunar_glow/main/manage.py) | ![screenshot](documentation/py-validation-rootlevel-manage.png) | Pass: No Errors |
+
+
+
+
+
 
 ## Browser Compatibility
 

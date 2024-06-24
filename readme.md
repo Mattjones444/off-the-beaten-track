@@ -4,7 +4,7 @@
 
 \# Purpose
 
-This project is aimed at promoting a new adventure holiday activity service called [Off the Beaten Track]( **<https://leveluphealth-cd483f475adf.herokuapp.com/**), which aims to give people the opportunity to search for and book activities in a range of different countries.
+This project is aimed at promoting a new adventure holiday activity service called [Off the Beaten Track]( **https://off-the-beaten-track-b019d3277c26.herokuapp.com/**), which aims to give people the opportunity to search for and book activities in a range of different countries.
 
 The core purposes of the app:
 
@@ -20,7 +20,7 @@ The core purposes of the app:
 
 The app is built using HTML, CSS, Django, Python and Postgres as a Milestone Project #4 for the Code Institute's Full Stack Developer course.  
 
-[The live website is available here](https://leveluphealth-cd483f475adf.herokuapp.com/)
+[The live website is available here](https://off-the-beaten-track-b019d3277c26.herokuapp.com/)
 
 \_\_\_
 
@@ -214,7 +214,7 @@ The navbar includes a hover-over effect to make the experience more interactive 
 
 \- \*\*Navigation bar\*\*
 
-![navbar](/level_up/static/readme/navbar.png)
+![navbar](/media/readme/navbar.png)
 
 
 Each page has a full responsive navigation bar at the top. It includes the Logo (which is a link to the Home page), a search bar, 'My Account' icon compromising of a register and login option, for unauthenticated users. Authenticated users can select their profile information and site admins can add activities. It retains an identical layout throughout the website across all devices to ensure simple and intuitive navigation. The Navbar will allow the user to reach any section of the website from any point on the website without unnecessary steps and using browser navigation buttons.            
@@ -227,33 +227,33 @@ The secondary navbar provides users with the ability to select activities based 
 
 \- \*\*Hero image\*\*
 
-![heroimage](/level_up/static/readme/heroimage.png)
+![heroimage](/media/readme/heroimage.png)
 
 This section is the first thing the user sees opening each page, it is an eye-catching image for aesthetical stimulation, which also helps to deliver the page's semantics as visual associations are commonly very strong. On the Home page, it also includes a call to action button taking users straight to the menu of activities.
 
 \- \*\*Footer\*\*
 
-![footer](/level_up/static/readme/footer.png)
+![footer](/media/readme/footer.png)
 
 The Footer contains the links to the social media and allows the user to continue engagement with the company on various platforms. 
 
 
 \- \*\*Activities page\*\*
 
-![activities](/assets/readme/successstories.png)
+![activities](/media/readme/activities.png)
 
 This page contains a large range of activities for users to browse and select,which can be accessed through filtering depending on their interests. Each activity card features a vivid, appealing image of the activity, encouraging the user to click on the card, a clear title for the activity and the location, country, price and rating. Users can filter these activities based on price, rating and category. They can also sort them by price (low-high and high-low), rating (low-high and high-low) and alphbetically. 
 
 \- \*\*Activity Details page\*\*
 
-![activity details](/level_up/static/readme/registration.png)
+![activity details](/media/readme/activity-detail.png)
 
 This page will allow the user to find out more about an activity they have selected. The image appears on the page, which matches the one the user has selected to maintain visual continuity. There is further information on the page around price, category, group size, duration and rating (featuring a link to the reviews section). Users can begin the purchasing process on this page by selecting how many guests will be participating in the activity and the date that they would like to book the activity for. The 'Add to Bag' button allows them to add this activity to thier basket.  
 
 
 \- \*\*Reviews page\*\*
 
-![activity details](/level_up/static/readme/registration.png)
+![activity details](/media/readme/reviews.png)
 
 This page is designed for users to add reviews of the activities they have booked. The title of the activity is displayed at the top of the page and the image associated with each activity also appears. There is a form for submitting a review, which includes encouraging users to give their name, star rating and a description of the review. This is then added to the review section at the bottom of the page. If there aren't currently any reviews, 'No reviews added' will display. 
 

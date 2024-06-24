@@ -315,6 +315,16 @@ footer{
 
 /* -------------------------------- Media Queries */
 
+@media (max-width:150px) {
+
+    .logo-font {
+        text-transform: uppercase;
+        font-size: px;
+        font-weight: bold;
+        margin-top: 40px;
+    }
+}
+
 @media (max-width:576px) {
     body {background: url('/media/hero_image.png') no-repeat center center fixed;
     background-size: cover;
@@ -352,9 +362,6 @@ footer{
     .hero-message{
         margin-top: 380px;
     }
-
-
-
 }
 
 /* Slightly larger container on xl screens */

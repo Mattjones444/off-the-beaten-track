@@ -1,4 +1,4 @@
-# [BEATEN_TRACK](https://off-the-beaten-track-b019d3277c26.herokuapp.com/)
+# [OFF THE BEATEN TRACK](https://off-the-beaten-track-b019d3277c26.herokuapp.com/)
 
 Welcome to the Off the Beaten Track. This website has been designed to provide an online platform for customers to explore and purchase a variety of adventurous holiday activities. With a focus on creating a delightful shopping experience, this website aims to showcase our activities, while ensuring ease of navigation and secure transactions.
 

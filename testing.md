@@ -10,15 +10,11 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Flunar-glow-77444c493d2e.herokuapp.com%2F) | ![screenshot](documentation/html-validation-home.png) | Pass: No Errors|
-| Product | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Flunar-glow-77444c493d2e.herokuapp.com%2Fproducts%2F) | ![screenshot](documentation/html-validation-products.png) | Pass: No Errors |
-| FAQs | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Flunar-glow-77444c493d2e.herokuapp.com%2Ffaqs%2Ffaqs%2F) | ![screenshot](documentation/html-validation-faqs.png) | Pass: No Errors |
-| Newsletter | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Flunar-glow-77444c493d2e.herokuapp.com%2Fnewsletter%2F) | ![screenshot](documentation/html-validation-newsletter.png) | Pass: No Errors |
-| Which Scent? | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Flunar-glow-77444c493d2e.herokuapp.com%2Fscentprofile%2F) | ![screenshot](documentation/html-validation-whichscent.png) | Pass: No Errors |
-| Product Details | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Flunar-glow-77444c493d2e.herokuapp.com%2Fproducts%2F2%2F) | ![screenshot](documentation/html-validation-productdetails.png) | Pass: No Errors |
-| Bag | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Flunar-glow-77444c493d2e.herokuapp.com%2Fbag%2F) | ![screenshot](documentation/html-validation-bag.png) | Pass: No Errors |
-| Checkout | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Flunar-glow-77444c493d2e.herokuapp.com%2Fcheckout%2F) | ![screenshot](documentation/html-validation-checkout.png) | Pass: No Errors |
-| Checkout Success | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Flunar-glow-77444c493d2e.herokuapp.com%2Fcheckout%2Fcheckout_success%2F3EB990504C95402CAA838A91CEE7C4C9) | ![screenshot](documentation/html-validation-checkoutsuccess.png) | Error: Element p not allowed as child of element strong (known django bug) |
+| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Foff-the-beaten-track-b019d3277c26.herokuapp.com%2F) | ![screenshot](/media/readme/htmlvalidation-main.png) | Pass: No Errors|
+| Activity | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Foff-the-beaten-track-b019d3277c26.herokuapp.com%2Factivity) | ![screenshot](/media/readme/htmlvalidation-activity.png) | Pass: No Errors |
+| Bag | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Foff-the-beaten-track-b019d3277c26.herokuapp.com%2Fbag) | ![screenshot](/media/readme/htmlvalidation-bag.png) | Pass: No Errors |
+| Checkout | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Foff-the-beaten-track-b019d3277c26.herokuapp.com%2Fcheckout) | ![screenshot](/media/readme/htmlvalidation-checkout.png) | Pass: No Errors |
+
 
 
 ### CSS

@@ -319,7 +319,7 @@ footer{
 
     .logo-font {
         text-transform: uppercase;
-        font-size: px;
+        font-size: 20px;
         font-weight: bold;
         margin-top: 40px;
     }
@@ -354,15 +354,7 @@ footer{
 
 }
 
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
 
-    .hero-message{
-        margin-top: 380px;
-    }
-}
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {

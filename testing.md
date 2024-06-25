@@ -56,20 +56,8 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 The browsers tested include:
 - [Chrome](https://www.google.com/chrome)
 - [Firefox (Developer Edition)](https://www.mozilla.org/firefox/developer)
-- [Edge](https://www.microsoft.com/edge)
 - [Safari](https://support.apple.com/downloads/safari)
 - [Brave](https://brave.com/download)
-- [Opera](https://www.opera.com/download)
-
-| Browser | Home | Products | FAQs | Newsletter | Which Scent? | Notes |
-| --- | --- | --- | --- | --- | --- | --- |
-| Chrome | ![screenshot](documentation/browser-chrome-home.png) | ![screenshot](documentation/browser-chrome-products.png) | ![screenshot](documentation/browser-chrome-faqs.png) | ![screenshot](documentation/browser-chrome-newsletter.png) | ![screenshot](documentation/browser-chrome-whichscent.png) |Works as expected |
-| Firefox | ![screenshot](documentation/browser-firefox-home.png) | ![screenshot](documentation/browser-firefox-products.png) | ![screenshot](documentation/browser-firefox-faqs.png) | ![screenshot](documentation/browser-firefox-newsletter.png) | ![screenshot](documentation/browser-firefox-whichscent.png) |Works as expected |
-| Edge | ![screenshot](documentation/browser-edge-home.png) | ![screenshot](documentation/browser-edge-products.png) | ![screenshot](documentation/browser-edge-faqs.png) | ![screenshot](documentation/browser-edge-newsletter.png) | ![screenshot](documentation/browser-edge-whichscent.png) |Works as expected |
-| Safari | ![screenshot](documentation/browser-safari-home.png) | ![screenshot](documentation/browser-safari-products.png) | ![screenshot](documentation/browser-safari-faqs.png) | ![screenshot](documentation/browser-safari-newsletter.png) | ![screenshot](documentation/browser-safari-whichscent.png) |Minor CSS differences |
-| Brave | ![screenshot](documentation/browser-brave-home.png) | ![screenshot](documentation/browser-brave-products.png) | ![screenshot](documentation/browser-brave-faqs.png) | ![screenshot](documentation/browser-brave-newsletter.png) | ![screenshot](documentation/browser-brave-whichscent.png) |Works as expected |
-| Opera | ![screenshot](documentation/browser-opera-home.png) | ![screenshot](documentation/browser-opera-products.png) | ![screenshot](documentation/browser-opera-faqs.png) | ![screenshot](documentation/browser-opera-newsletter.png) | ![screenshot](documentation/browser-opera-whichscent.png) |Minor differences |
-
 
 ## Responsiveness
 
@@ -77,12 +65,12 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 
 | Device | Home | Products | FAQs | Newsletter | Which Scent | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| Mobile (DevTools - Samsung Galaxy S20 Ultra) | ![screenshot](documentation/responsive-mobile-home.png) | ![screenshot](documentation/responsive-mobile-products.png) | ![screenshot](documentation/responsive-mobile-faqs.png) | ![screenshot](documentation/responsive-mobile-newsletter.png) |![screenshot](documentation/responsive-mobile-whichscent.png) | Works as expected |
-| Tablet (iPad Air) | ![screenshot](documentation/responsive-tablet-home.png) | ![screenshot](documentation/responsive-tablet-products.png) | ![screenshot](documentation/responsive-tablet-faqs.png) | ![screenshot](documentation/responsive-tablet-newsletter.png) | ![screenshot](documentation/responsive-tablet-whichscent.png) | Works as expected |
+| Mobile (DevTools - iPhone 14) | ![screenshot](documentation/responsive-mobile-home.png) | ![screenshot](documentation/responsive-mobile-products.png) | ![screenshot](documentation/responsive-mobile-faqs.png) | ![screenshot](documentation/responsive-mobile-newsletter.png) |![screenshot](documentation/responsive-mobile-whichscent.png) | Works as expected |
+| Tablet (iPad Pro) | ![screenshot](documentation/responsive-tablet-home.png) | ![screenshot](documentation/responsive-tablet-products.png) | ![screenshot](documentation/responsive-tablet-faqs.png) | ![screenshot](documentation/responsive-tablet-newsletter.png) | ![screenshot](documentation/responsive-tablet-whichscent.png) | Works as expected |
 | Desktop | ![screenshot](documentation/responsive-desktop-home.png) | ![screenshot](documentation/responsive-desktop-products.png) | ![screenshot](documentation/responsive-desktop-faqs.png) | ![screenshot](documentation/responsive-desktop-newsletter.png) |![screenshot](documentation/responsive-tablet-whichscent.png) |  Works as expected |
 | XL Monitor | ![screenshot](documentation/responsive-xl-home.png) | ![screenshot](documentation/responsive-xl-products.png) | ![screenshot](documentation/responsive-xl-faqs.png) | ![screenshot](documentation/responsive-xl-newsletter.png) | ![screenshot](documentation/responsive-xl-whichscent.png) | Scaling starts to have minor issues |
-| 4K Monitor | ![screenshot](documentation/responsive-4k-home.png) | ![screenshot](documentation/responsive-4k-products.png) | ![screenshot](documentation/responsive-4k-faqs.png) | ![screenshot](documentation/responsive-4k-newsletter.png) | ![screenshot](documentation/responsive-4k-whichscent.png) | Noticeable scaling issues |
-| iPhone 14 | ![screenshot](documentation/responsive-iphone-home.png) | ![screenshot](documentation/responsive-iphone-products.png) | ![screenshot](documentation/responsive-iphone-faqs.png) | ![screenshot](documentation/responsive-iphone-newsletter.png) | ![screenshot](documentation/responsive-iphone-whichscent.png) | Works as expected |
+
+
 
 ## Lighthouse Audit
 
@@ -120,7 +108,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Feature is expected to allow administrator to have access to various tables such as orders, activity, reviews, to give the admin the ability to add and delete activities and reviews  | Tested the feature by adding, editing, and removal of activities and reviews | The feature worked as expected.| Test concluded and passed | ![screenshot](/media/readme/feature09.png) |
 
 
-Soe other tests were conducted which include results below:
+Some other tests were conducted which include results below:
 
 | Page | User Action | Expected Result | Pass/Fail | Comments |
 | --- | --- | --- | --- | --- |
@@ -156,20 +144,31 @@ Soe other tests were conducted which include results below:
 | | Click on add to bag button to add product to bag | Item will be added to bag | Pass | |
 | | Click on keep shopping button to add product to bag | Item will be added to bag | Pass | |
 
+
+## Unit Testing
+
+Unit testing was used to check the validity of forms, a few selected functions and http responses, results are shown below.
+
+| Page | User Action | Expected Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Home | | | | | |
+| | Page is expected to open and render correctly. | Tested using test_homepage function in test_views.py in the Home app   | The feature behaved as expected, and it did render correctly | Test concluded and passed |
+| Home | | | | | |
+| | Activity expected to be added to bag. | Tested using test_add_to_bag function in test_views.py in the Home app   | The feature behaved as expected, and added the item to the bag | Test concluded and passed |
+| Checkout | | | | | |
+| | Order form input tested for validity. | Tested using test_order_form_invalid function in test_forms.py | The feature behaved as expected, however optional fields caused a valid result | Test concluded and passed |
+
+
 ## User Story Testing
 
 | User Story | Screenshot |
 | --- | --- |
-| As a new user, I want to create an account and set up my profile, so that I can store my order details and preferences securely, enhancing my shopping experience. | ![screenshot](documentation/feature01.png) |
-| As a user, I want to easily browse, search, and sort through various candles and wax melts, so that I can quickly find products that match my preferences and improve my shopping experience. | ![screenshot](documentation/feature02.png) |
-| As a user, I want clear navigation elements and interactive buttons, so that I can easily move between sections/pages and perform actions efficiently, enhancing my overall experience on the site. | ![screenshot](documentation/feature03.png) |
-| As an administrator, I want to manage products effectively by adding new items, updating details, and removing discontinued products, so that I can keep the inventory fresh and relevant for users. | ![screenshot](documentation/feature04.png) |
-| As a user, I want to subscribe to newsletters and receive updates about new products and promotions, so that I can stay informed and engaged with the website, leading to repeat visits. | ![screenshot](documentation/feature05.png) |
-| As a user, I want to explore scent profiles and find products that match my preferred fragrances, so that I can make informed purchasing decisions and enhance my satisfaction with the products. | ![screenshot](documentation/feature06.png) |
-| As a user, I want access to a comprehensive FAQ section to find answers to common questions, so that I can resolve uncertainties and improve my shopping experience on the site. | ![screenshot](documentation/feature07.png) |
-| As a user, I want to manage my shopping bag by adding, editing, or removing items before checkout, so that I can review and adjust my orders conveniently, ensuring a smooth purchasing process. | ![screenshot](documentation/feature08.png) |
-| As an administrator, I want to view and manage order details, as well as handle customer inquiries efficiently, so that I can streamline order processing and provide excellent customer service. | ![screenshot](documentation/feature09.png) |
-| As an administrator, I want access to a dashboard to manage various aspects of the website, including products, user profiles, orders, FAQs, and newsletter subscribers, so that I can efficiently oversee and maintain the site for optimal performance and user experience. | ![screenshot](documentation/feature10.png) |
+| As a new user, I want to create an account and set up my profile, so that I can store my order details and preferences securely, enhancing my shopping experience. | ![screenshot](/media/readme/feature01.png) |
+| As a user, I want to easily browse, search, and sort through various candles and wax melts, so that I can quickly find products that match my preferences and improve my shopping experience. | ![screenshot](/media/readme/feature02.png) |
+| As a user, I want clear navigation elements and interactive buttons, so that I can easily move between sections/pages and perform actions efficiently, enhancing my overall experience on the site. | ![screenshot](/media/readme/feature03.png) |
+| As an administrator, I want to manage products effectively by adding new items, updating details, and removing discontinued products, so that I can keep the inventory fresh and relevant for users. | ![screenshot](/media/readme/feature09.png) |
+| As a user, I want to manage my shopping bag by adding, editing, or removing items before checkout, so that I can review and adjust my orders conveniently, ensuring a smooth purchasing process. | ![screenshot](media/readme/feature05.png) |
+| As an administrator, I want access to a dashboard to manage various aspects of the website, including products, user profiles, orders, FAQs, and newsletter subscribers, so that I can efficiently oversee and maintain the site for optimal performance and user experience. | ![screenshot](/media/readme/admindashboard.png) |
 
 ## Bugs
 

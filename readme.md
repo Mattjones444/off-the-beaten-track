@@ -35,17 +35,20 @@ The font was used to give a clean and elegant finish.
 
 ### New Site Users
 
-\- I want to easily understand the main purpose of the app and learn more about the services.
+\- I want to create an account and set up my profile, so that I can store my order details and preferences securely, enhancing my shopping experience.
+
+\- I want to easily browse, search, and sort through various candles and wax melts, so that I can quickly find products that match my preferences and improve my shopping experience.
+
+\- I want clear navigation elements and interactive buttons, so that I can easily move between sections/pages and perform actions efficiently, enhancing my overall experience on the site.
 
 \- I want to be able to easily navigate and quickly find activities relevant to me.
 
 \- I want to find ways to join the community and follow the company on different social media.
 
-\- I want to find and easily book activities through the app.
+\- I want to manage my shopping bag by adding, editing, or removing items before checkout, so that I can review and adjust my orders conveniently, ensuring a smooth purchasing process. 
 
 \- I want to let other users know my opinion of the activities I have chosen.
 
-\- I want to save my information and use it to make purchasing an activity easier next time.
 
 ### Returning Site Users
 

@@ -63,12 +63,12 @@ The browsers tested include:
 
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
-| Device | Home | Products | FAQs | Newsletter | Which Scent | Notes |
+| Device | Home | Activity | Activity Detail | Reviews | Checkout | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| Mobile (DevTools - iPhone 14) | ![screenshot](/media/readme/responsivetesting/homepage-iphone14.png) | ![screenshot](documentation/responsive-mobile-products.png) | ![screenshot](documentation/responsive-mobile-faqs.png) | ![screenshot](documentation/responsive-mobile-newsletter.png) |![screenshot](documentation/responsive-mobile-whichscent.png) | Works as expected |
-| Tablet (iPad Pro) | ![screenshot](/media/readme/responsivetesting/homepage-ipadpro.pngmedia/) | ![screenshot](documentation/responsive-tablet-products.png) | ![screenshot](documentation/responsive-tablet-faqs.png) | ![screenshot](documentation/responsive-tablet-newsletter.png) | ![screenshot](documentation/responsive-tablet-whichscent.png) | Works as expected |
-| Desktop | ![screenshot](/media/readme/responsivetesting/homepage-desktop.png) | ![screenshot](documentation/responsive-desktop-products.png) | ![screenshot](documentation/responsive-desktop-faqs.png) | ![screenshot](documentation/responsive-desktop-newsletter.png) |![screenshot](documentation/responsive-tablet-whichscent.png) |  Works as expected |
-| XL Monitor | ![screenshot](/media/readme/responsivetesting/homepage-xl.png) | ![screenshot](documentation/responsive-xl-products.png) | ![screenshot](documentation/responsive-xl-faqs.png) | ![screenshot](documentation/responsive-xl-newsletter.png) | ![screenshot](documentation/responsive-xl-whichscent.png) | Scaling starts to have minor issues |
+| Mobile (DevTools - iPhone 14) | ![screenshot](/media/readme/responsivetesting/homepage-iphone14.png) | ![screenshot](/media/readme/responsivetesting/activity-iphone.png) | ![screenshot](/media/readme/responsivetesting/activity_detail-iphone.png) | ![screenshot](/media/readme/responsivetesting/reviews-iphone.png) |![screenshot](/media/readme/responsivetesting/checkout-iphone.png) | Works as expected |
+| Tablet (iPad Pro) | ![screenshot](/media/readme/responsivetesting/homepage-ipadpro.pngmedia/) | ![screenshot](/media/readme/responsivetesting/activity-ipadpro.png) | ![screenshot](/media/readme/responsivetesting/activity_detail-ipadpro.png) | ![screenshot](/media/readme/responsivetesting/reviews-ipad.png) | ![screenshot](/media/readme/responsivetesting/checkout-ipad.png) | Works as expected |
+| Desktop | ![screenshot](/media/readme/responsivetesting/homepage-desktop.png) | ![screenshot](/media/readme/responsivetesting/activity-desktop.png) | ![screenshot](/media/readme/responsivetesting/activity_detail-desktop.png) | ![screenshot](/media/readme/responsivetesting/reviews-desktop.png) |![screenshot](/media/readme/responsivetesting/checkout-desktop.png) |  Works as expected |
+| XL Monitor | ![screenshot](/media/readme/responsivetesting/homepage-xl.png) | ![screenshot](/media/readme/responsivetesting/activity-lx.png) | ![screenshot](/media/readme/responsivetesting/activity_detail-xl.png) | ![screenshot](/media/readme/responsivetesting/reviews-xl.png) | ![screenshot](/media/readme/responsivetesting/checkout-xl.png) | Scaling starts to have minor issues |
 
 
 

@@ -150,7 +150,7 @@ Some other tests were conducted which include results below:
 Unit testing was used to check the validity of forms, a few selected functions and http responses, results are shown below.
 
 | Page | User Action | Expected Result | Pass/Fail |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | Home | | | | | |
 | | Page is expected to open and render correctly. | Tested using test_homepage function in test_views.py in the Home app   | The feature behaved as expected, and it did render correctly | Test concluded and passed |
 | Home | | | | | |

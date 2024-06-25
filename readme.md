@@ -79,19 +79,16 @@ The font was used to give a clean and elegant finish.
 <summary> Click here to see the Mobile Wireframes </summary>
 
 Home
-  - ![screenshot](documentation/wireframes/mobile-home.jpeg)
+  - ![screenshot](/media/readme/wireframes/home-phone-wireframe.png)
 
-Products
-  - ![screenshot](documentation/wireframes/mobile-products.jpeg)
+Activity
+  - ![screenshot](/media/readme/wireframes/activity-phone-wireframe.png)
 
-FAQs
-  - ![screenshot](documentation/wireframes/mobile-faqs.jpeg)
+Activity Detail
+  - ![screenshot](/media/readme/wireframes/activity_detail-phone.png)
 
-Newsletter
-  - ![screenshot](documentation/wireframes/mobile-newsletter.jpeg)
-
-Which Scent?
-  - ![screenshot](documentation/wireframes/mobile-whichscent.jpeg)
+Reviews
+  - ![screenshot](/media/readme/wireframes/reviews-phone-wireframe.png)
 
 </details>
 
@@ -101,19 +98,16 @@ Which Scent?
 <summary> Click here to see the Tablet Wireframes </summary>
 
 Home
-  - ![screenshot](documentation/wireframes/tablet-home.jpeg)
+  - ![screenshot](/media/readme/wireframes/home-tablet-wireframe.png)
 
-Products
-  - ![screenshot](documentation/wireframes/tablet-products.jpeg)
+Activity
+  - ![screenshot](/media/readme/wireframes/activity-tablet-wireframe.png)
 
-FAQs
-  - ![screenshot](documentation/wireframes/tablet-faqs.jpeg)
+Activity Detail
+  - ![screenshot](/media/readme/wireframes/activity_detail-tablet-wireframe.png)
 
-Newsletter
-  - ![screenshot](documentation/wireframes/tablet-newsletter.jpeg)
-
-Which Scent?
-  - ![screenshot](documentation/wireframes/tablet-whichscent.jpeg)
+Reviews
+  - ![screenshot](/media/readme/wireframes/reviews-tablet-wireframe.png)
 
 </details>
 
@@ -123,19 +117,16 @@ Which Scent?
 <summary> Click here to see the Desktop Wireframes </summary>
 
 Home
-  - ![screenshot](documentation/wireframes/desktop-home.jpeg)
+  - ![screenshot](/media/readme/wireframes/home-desktop-wireframes.png)
 
-Products
-  - ![screenshot](documentation/wireframes/desktop-products.jpeg)
+Activity
+  - ![screenshot](/media/readme/wireframes/activity-desktop-wireframe.png)
 
-FAQs
-  - ![screenshot](documentation/wireframes/desktop-faqs.jpeg)
+Activity Detail
+  - ![screenshot](/media/readme/wireframes/activity_detail-desktop-wireframe.png)
 
-Newsletter
-  - ![screenshot](documentation/wireframes/desktop-newsletter.jpeg)
-
-Which Scent?
-  - ![screenshot](documentation/wireframes/desktop-whichscent.jpeg)
+Reviews
+  - ![screenshot](/media/readme/wireframes/reviews-desktop-wireframe.png)
 
 </details>
 

@@ -31,7 +31,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG')
 
-ALLOWED_HOSTS = ['off-the-beaten-track-b019d3277c26.herokuapp.com', 'localhost', 'www.beaten_track.herokuapp.com',]
+ALLOWED_HOSTS = ['8000-mattjones44-offthebeate-pl58ipzsf8f.ws.codeinstitute-ide.net', 'off-the-beaten-track-b019d3277c26.herokuapp.com', 'localhost', 'www.beaten_track.herokuapp.com',]
 
 
 

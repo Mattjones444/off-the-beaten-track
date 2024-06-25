@@ -15,12 +15,9 @@ def view_bag(request):
     bag_items = []
     total = 0
     product_count = 0
-    # bag = request.session.get('bag', {})
-    # grand_total = 0
 
     for item_id, item_data in bag.items():
         activity = get_object_or_404(Activity, pk=item_id)
-        # date = request.POST.get('datepickerfrom')
         if isinstance(item_data, int):
             # Handle legacy integer quantity format
             quantity = item_data
@@ -38,7 +35,6 @@ def view_bag(request):
             'activity': activity,
             'date': date,
         })
-          
         request.session['bag'] = bag
     
     grand_total = total
@@ -51,7 +47,6 @@ def view_bag(request):
         'grand_total': grand_total,
         # 'date': date,
     }
-
     return render(request, 'bag/bag.html', context)
 
 
@@ -76,7 +71,6 @@ def add_to_bag(request, item_id):
             messages.success(request, f'Added {activity.name} to bag')  
 
         request.session['bag'] = bag
-        print(bag)
         return redirect(redirect_url)
     else:
         return redirect('view_bag')
@@ -88,17 +82,14 @@ def adjust_bag(request, item_id):
     bag = request.session.get('bag', {})
     activity = get_object_or_404(Activity, pk=item_id)
     
-
     if quantity > 0:
         bag[item_id] = quantity
         messages.success(request, f'Updated {activity.name} in bag')
-
     else:
         bag[item_id]['date'] = date
         bag.pop(item_id)
         messages.success(request, f'Removed {activity.name} in bag')
         
-
     request.session['bag'] = bag
     
     return redirect(reverse('view_bag'))
@@ -106,8 +97,6 @@ def adjust_bag(request, item_id):
 
 def remove_from_bag(request, item_id):
     """Remove the item from the shopping bag"""
-
-    
     try:
         if request.method == "POST":
             bag = request.session.get('bag', {})

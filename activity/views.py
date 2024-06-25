@@ -44,7 +44,6 @@ def all_activity(request):
             activity = activity.filter(country__in=country)
             country = Activity.objects.filter(name__in=country)
             
-
     if request.GET:
         if 'q' in request.GET:
             query = request.GET['q']
@@ -57,7 +56,6 @@ def all_activity(request):
 
     current_sorting = f'{sort}_{direction}'
 
-
     context = {
         "activity": activity,
         'search_term': query,
@@ -65,7 +63,6 @@ def all_activity(request):
         'country': country,
         'current_sorting': current_sorting,
     }
-
 
     return render(request, 'activity/activity.html', context)
 
@@ -78,14 +75,12 @@ def activity_detail(request, activity_id):
     context = {
         'activity': activity,
     }
-
     return render(request, 'activity/activity_detail.html', context)
 
 
 def reviews(request, activity_id):
     activity = get_object_or_404(Activity, pk=activity_id) 
     reviews = Reviews.objects.filter(activity_name_id=activity_id)
-    
     
     if request.method == 'POST':
         print("POST data:", request.POST)
@@ -103,7 +98,6 @@ def reviews(request, activity_id):
         form = ReviewForm()
 
     return render(request, 'activity/reviews.html', {'form': form, 'activity_id': activity_id, 'activity': activity, 'reviews': reviews})
-
 
 
 @login_required

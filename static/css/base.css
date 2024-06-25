@@ -43,7 +43,7 @@ body {
 }
 
 .hero-message1{
-    margin-top: 160px;
+    margin-top: 220px;
 }
 
 .shop-now-button {
@@ -91,7 +91,7 @@ hr{
 
 .card-img-top {
     height: 200px;
-    width: 400px;
+    width: 100%;
     background-size: cover;
 }
 
@@ -319,14 +319,13 @@ footer{
 
 /* -------------------------------- Media Queries */
 
-@media (max-width:550px) {
+@media (max-width:1500px) {
 
-    .logo-font {
-        text-transform: uppercase;
-        font-size: 20px;
-        font-weight: bold;
-        margin-top: 40px;
-    }
+    .card-img-top {
+    height: 200px;
+    width: 1500px;
+    background-size: cover;
+}
 }
 
 @media (max-width:576px) {
@@ -395,6 +394,14 @@ footer{
 
 }
 
+@media (max-width:100px) {
+
+    .card-img-top {
+    height: 200px;
+    width: 1500px;
+    background-size: cover;
+}
+}
 
 
 /* Slightly larger container on xl screens */
@@ -402,7 +409,34 @@ footer{
   .container {
     max-width: 80%;
   }
+
+  .card-img-top {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
 }
+}
+
+@media (min-width: 1000px) {
+
+    .card-img-top {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+      max-width: 80%;
+    }
+  
+    .card-img-top {
+      height: 400px;
+      width: 100%;
+      object-fit: cover;
+  }
+  }
 
 /* Allauth form formatting */
 

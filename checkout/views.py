@@ -30,7 +30,6 @@ def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
-
     if request.method == 'POST':
 
         bag = request.session.get('bag', {})
@@ -93,11 +92,6 @@ def checkout(request):
                     )
                     order.delete()
                     return redirect(reverse('view_bag'))
-                #except ValueError as e:
-                    #messages.error(request, str(e))
-                    #order.delete()
-                    #return redirect(reverse('view_bag'))
-
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_number]))
         else:
@@ -142,6 +136,8 @@ def checkout(request):
         'client_secret': intent.client_secret if intent else None,
     }
     return render(request, template, context)
+
+
 def checkout_success(request, order_number):
     """
     Handle successful checkouts

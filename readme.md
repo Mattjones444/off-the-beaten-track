@@ -280,6 +280,8 @@ class Activity(models.Model):
 - [DrawSQL](/media/readme/drawsql.png)
 DrawSQL was used to create an ERD to visualise the tables within the database and their relationships.
 
+![screenshot](/media/readme/drawsql.png)
+
 
 
 - Table: **Product**

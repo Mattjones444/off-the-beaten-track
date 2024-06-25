@@ -90,13 +90,12 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | Page | Mobile | Desktop | Notes |
 | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse-home-desktop.png) | Slow response time due to large images |
-| Products | ![screenshot](documentation/lighthouse-products-mobile.png) | ![screenshot](documentation/lighthouse-products-desktop.png) | Slow response time due to large images |
-| FAQs | ![screenshot](documentation/lighthouse-faqs-mobile.png) | ![screenshot](documentation/lighthouse-faqs-desktop.png) | Slow response time due to large images |
-| Newsletter | ![screenshot](documentation/lighthouse-newsletter-mobile.png) | ![screenshot](documentation/lighthouse-newsletter-desktop.png) | Slow response time due to large images |
-| Which Scent? | ![screenshot](documentation/lighthouse-whichscent-mobile.png) | ![screenshot](documentation/lighthouse-whichscent-desktop.png) | Slow response time due to large images |
-| Bag | ![screenshot](documentation/lighthouse-bag-mobile.png) | ![screenshot](documentation/lighthouse-bag-desktop.png) | Slow response time due to large images |
-| Checkout | ![screenshot](documentation/lighthouse-checkout-mobile.png) | ![screenshot](documentation/lighthouse-checkout-desktop.png) | Slow response time due to large images |
+| home | ![screenshot](/media/readme/home-lighthouse-mobile.png) | ![screenshot](/media/readme/home-lighthouse-desktop.png) |
+| Activity | ![screenshot](/media/readme/activity-lighthouse-mobile.png) | ![screenshot](/media/readme/activity-lighthouse-desktop.png) |
+| Activity Details | ![screenshot](/media/readme/activity_detail-lighthouse-mobile.png) | ![screenshot](/media/readme/activity_detail-lighthouse-desktop.png) |
+| Reviews | ![screenshot](/media/readme/reviews-lighthouse-mobile.png) | ![screenshot](/media/readme/reviews-lighthouse-desktop.png) |
+| Bag | ![screenshot](/media/readme/bag-lighthouse-mobile.png) | ![screenshot](/media/readme/bag-lighthouse-desktop.png) |
+| Checkout | ![screenshot](/media/readme/checkout-lighthouse-mobile.png) | ![screenshot](/media/readme/checkout-lighthouse-desktop.png) |
 
 ## Defensive Programming
 
@@ -105,22 +104,20 @@ Defensive programming was manually tested with the below user acceptance testing
 | Page | Expectation | Test | Result | Fix | Screenshot |
 | --- | --- | --- | --- | --- | --- |
 | Home | | | | | |
-| | Page is expected to open the signup/login page when the user does clicks on 'My Profile'. | Tested the feature by clicking on 'My Profile'  | The feature behaved as expected, and it did open to the signup/login page | Test concluded and passed | ![screenshot](documentation/feature01.png) |
-| | Search bar is expected to return results that include keywords whne searched | Tested the feature by searching various words | The feature behaved as expected. | Test concluded and passed | ![screenshot](documentation/feature02.png) |
+| | Page is expected to open the signup/login page when the user does clicks on 'My Profile'. | Tested the feature by clicking on 'My Profile'  | The feature behaved as expected, and it did open to the signup/login page | Test concluded and passed | ![screenshot](/media/readme/feature01.png) |
+| | Search bar is expected to return results that include keywords whne searched | Tested the feature by searching various words | The feature behaved as expected. | Test concluded and passed | ![screenshot](/media/readme/feature02.png) |
 | Navigation - All Pages | | | | | |
-| | Navigation links are expected to do take the user to the correct page when the user does clicks on them | Tested the feature by clicking on links and checking which pages open | The feature behaved as expected, and opened correct pages| Test concluded and passed | ![screenshot](documentation/feature03.png) |
-| | Feature is expected to go to the shopping bag when clicked | Tested the feature by clicking on the bag | The feature worked as expected. | Test concluded and passed | ![screenshot](documentation/feature04.png) |
-| Newsletter | | | | | |
-| | Feature is expected to allow user to fill a form and subscribe to a newsletter | Tested the feature by doing adding name and e-mail address to the form | Tested the feature by filling in the form details | Test concluded and passed | ![screenshot](documentation/feature05.png) |
-| Scent Profile| | | | | |
-| | Feature is expected to send the user to a products page of all the products with a particular scent when button on carousel is clicked | Tested the feature by clicking on button | The feature worked as expected.  | Test concluded and passed | ![screenshot](documentation/feature06.png) |
-| FAQs | | | | | |
-| | Feature is expected to show the answer to an FAQ as a droop down when the question is clicked upon. | Tested the feature by clicking on question | The feature behaved as expected, and it showed the answer | Test concluded and passed | ![screenshot](documentation/feature07.png) |
+| | Navigation links are expected to do take the user to the correct page when the user does clicks on them | Tested the feature by clicking on links and checking which pages open | The feature behaved as expected, and opened correct pages| Test concluded and passed | ![screenshot](media/readme/feature03.png) |
+| | Feature is expected to go to the shopping bag when clicked | Tested the feature by clicking on the bag | The feature worked as expected. | Test concluded and passed | ![screenshot](/media/readme/feature04.png) |
 | Shopping Bag | | | | | |
-| | Feature is expected to add, remove and delete items in the bag | Tested the feature by adding items to the bag, change the numbeer of items and delete items | The feature worked as expected. | Test concluded and passed | ![screenshot](documentation/feature08.png) |
+| | Feature is expected to add, remove and delete items in the bag | Tested the feature by adding items to the bag, change the numbeer of items and delete items | The feature worked as expected. | Test concluded and passed | ![screenshot](/media/readme/feature05.png) |
+| Add Review | | | | | |
+| | Feature is expected to add a review to an activity | Tested the feature by adding a review to an activity through the form | The feature worked as expected. | Test concluded and passed | ![screenshot](/media/readme/feature06.png) |
+| Checkout | | | | | |
+| | Feature is expected to allow the user to purchase an activity | Tested the feature by completing checkout form process | The feature worked as expected. | Test concluded and passed | ![screenshot](/media/readme/feature07.png) |
 | Admin Panel | | | | | |
-| | Feature is expected to allow the admin user to manage order details of customers | Tested the feature by changing quantities and deleting items from order| The feature worked as expected. | Test concluded and passed | ![screenshot](documentation/feature09.png) |
-| | Feature is expected to allow administrator to have access to various tables such as orders, products, subscribers and faqs to allow adding, editing, and removal of faqs, products and subscribers  | Tested the feature by adding, editing, and removal of faqs, products and subscribers | The feature worked as expected.| Test concluded and passed | ![screenshot](documentation/feature10.png) |
+| | Feature is expected to allow the admin user to manage order details of customers | Tested the feature by changing quantities and deleting items from order| The feature worked as expected. | Test concluded and passed | ![screenshot](/media/readme/feature08.png) |
+| | Feature is expected to allow administrator to have access to various tables such as orders, activity, reviews, to give the admin the ability to add and delete activities and reviews  | Tested the feature by adding, editing, and removal of activities and reviews | The feature worked as expected.| Test concluded and passed | ![screenshot](/media/readme/feature09.png) |
 
 
 Soe other tests were conducted which include results below:
@@ -133,17 +130,12 @@ Soe other tests were conducted which include results below:
 | Navigation | | | | |
 | | Click on any link in navbar | Redirection to all pages | Pass | |
 | | Search bar | Searches work as expected | Pass | |
-| Newsletter | | | | |
-| | Click on Newsletter link in navbar | Redirection to newsletter form | Pass | |
-| | Enter first/last name | Field will accept freeform text | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Click the Submit button | Redirects user to form-dump | Pass |  |
 | Sign Up | | | | |
 | | Click on Sign Up button | Redirection to Sign Up page | Pass | |
 | | Enter valid email address | Field will only accept email address format | Pass | |
 | | Enter valid password (twice) | Field will only accept password format | Pass | |
 | | Click on Sign Up button | Asks user to confirm email page | Pass | Email sent to user |
-| | Confirm email | Redirects user to blank Sign In page | Pass | |
+| | Confirm email | Redirects user to a page encouraging them to confirm their email | Pass | |
 | Log In | | | | |
 | | Click on the Login link | Redirection to Login page | Pass | |
 | | Enter valid email address | Field will only accept email address format | Pass | |
@@ -157,15 +149,12 @@ Soe other tests were conducted which include results below:
 | | Click on the Edit button | User will be redirected to the edit profile page | Pass | |
 | | Click on the My Orders link | User will be redirected to the My Orders page | Pass | |
 | | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
-| Products | | | | |
-| | Click on product image | User will be redirected to the Product Details page | Pass | |
+| Activity | | | | |
+| | Click on activity image | User will be redirected to the Activity Details page | Pass | |
 | Product Details | | | | |
 | | Click on + / - button to add/remove product from bag | Quantity in bag will increase/decrease | Pass | |
 | | Click on add to bag button to add product to bag | Item will be added to bag | Pass | |
 | | Click on keep shopping button to add product to bag | Item will be added to bag | Pass | |
-| Which Scent? | | | | |
-| | Click on scroll button to move through the carousel | Carousel will move to the next scent profile | Pass | |
-
 
 ## User Story Testing
 

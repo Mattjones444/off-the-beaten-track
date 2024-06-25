@@ -41,12 +41,14 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- |
 | Activity views.py | ![screenshot](/media/readme/activity-view.py-validated.png) | Pass: No Errors |
-| Bag views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/d3lyth/lunar_glow/main/profiles/models.py) | ![screenshot](documentation/py-validation-bag-views.png) | Pass: No Errors |
-
-
-
-
-
+| Bag views.py | ![screenshot](/media/readme/bag-views.py-validated.png) | Line 67 and 68 - Line too long |
+| Checkout views.py | ![screenshot](/media/readme/checkout-views.py-validated.png) | Pass: No Errors  |
+| Profiles views.py | ![screenshot](/media/readme/profiles-views.py-validated.png) | Pass: No Errors  |
+| SETTINGS.py | ![screenshot](/media/readme/settings.py-validated.png) | Line 143-146 too long  |
+| Activity forms.py | ![screenshot](/media/readme/activity-forms.py-validated.png) | Pass: No Errors |
+| Checkout forms.py | ![screenshot](/media/readme/checkout-forms.py-validated.png) | Pass: No Errors |
+| Profile forms.py | ![screenshot](/media/readme/profile-forms.py-validated.png) | Line 33 too long |
+| Activity models.py | ![screenshot](/media/readme/activity-models.py-validated.png) | Line 34/52 too long |
 
 ## Browser Compatibility
 

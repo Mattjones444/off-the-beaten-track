@@ -21,11 +21,6 @@ class ProductForm(forms.ModelForm):
             field.widget.attrs['class'] = 'border-black rounded-0'
 
 
-
-
-
-
-
 class ReviewForm(forms.ModelForm):
     class Meta:
         model = Reviews

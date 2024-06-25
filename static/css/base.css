@@ -100,8 +100,8 @@ hr{
 }
 
 .activity_detail_image {
-    height: 400px;
-    width: 500px;
+    height: auto;
+    width: auto;
 }
 
 a.category-badge > span.badge:hover {

@@ -1,6 +1,6 @@
 # Testing
 
-Return back to the [README.md](README.md) file.
+Return back to the [readme.md](readme.md) file.
 
 ## Code Validation
 
@@ -172,28 +172,19 @@ Unit testing was used to check the validity of forms, a few selected functions a
 
 ## Bugs
 
-- Checkout Success form not totalling the order amount correctly and just showing £0.00.
+- Responsiveness issues on homepage with hero-message not displaying correctly on mobile devices.
 
-    - To fix this, I changed to code to access the totals from the order object instead of the bag context.
+    - To fix this, I adjusted the css margins to fit the specific screen size.
 
-- Python `E501 line too long` (93 > 79 characters)
+- Some images appeared stretched on the activity details page
 
-    - To fix this, I refactored the code so that the line was not too long.
-
-- CSS Footer Styling issues - the footer was not pushing to the bottom of the page.
-
-    - To fix this, I ran the page through the validator and noticed an open `<div>` tag, which when closed, rectified the problem.
+    - To fix this, I adjusted the css on specific pages to ensure it rendered correctly. 
 
 ## Unfixed Bugs
 
-- Element `<ul>` not allowed as a child element of `small`
+- Through checkout process, the screen renders the checkout page, minus the form, while the checkout is processing. It then moves to checkout success.
 
-    - Attempted fix: This is a known bug with Django-Allauth and is acceptable. ![screenshot](documentation/bug01.png) 
 
 - On devices smaller than 375px, the page starts to have `overflow-x` scrolling.
 
     - Attempted fix: I tried to add additional media queries to handle this, but things started becoming too small to read.
-
-- When validating HTML with a semantic `section` element, the validator warns about lacking a header `h2-h6`. This is acceptable.
-
-    - Attempted fix: this is a known warning and acceptable, and my section doesn't require a header since it's dynamically added via JS.

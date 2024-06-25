@@ -358,11 +358,11 @@ DrawSQL was used to create an ERD to visualise the tables within the database an
 
 ## Testing
 
-For all testing, please refer to the [TESTING.md](TESTING.md) file.
+For all testing, please refer to the [testing.md](testing.md) file.
 
 ## Deployment
 
-The live deployed application can be found deployed on [Heroku](https://lunar-glow-77444c493d2e.herokuapp.com).
+The live deployed application can be found deployed on [Heroku](https://off-the-beaten-track-b019d3277c26.herokuapp.com/).
 
 ### ElephantSQL Database
 

@@ -366,18 +366,9 @@ For all testing, please refer to the [testing.md](testing.md) file.
 
 The live deployed application can be found deployed on [Heroku](https://off-the-beaten-track-b019d3277c26.herokuapp.com/).
 
-### ElephantSQL Database
+### PostgresQL Database
 
-This project uses [ElephantSQL](https://www.elephantsql.com) for the PostgreSQL Database.
-
-To obtain your own Postgres Database, sign-up with your GitHub account, then follow these steps:
-
-- Click **Create New Instance** to start a new database.
-- Provide a name (this is commonly the name of the project: lunar_glow).
-- Select the **Tiny Turtle (Free)** plan.
-- You can leave the **Tags** blank.
-- Select the **Region** and **Data Center** closest to you.
-- Once created, click on the new database name, where you can view the database URL and Password.
+This project uses the Codeinstitues' PostgreSQL for the PostgreSQL Database.
 
 ### Amazon AWS
 

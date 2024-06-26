@@ -164,7 +164,7 @@ Unit testing was used to check the validity of forms, a few selected functions a
 | User Story | Screenshot |
 | --- | --- |
 | As a new user, I want to create an account and set up my profile, so that I can store my order details and preferences securely, enhancing my shopping experience. | ![screenshot](/media/readme/feature01.png) |
-| As a user, I want to easily browse, search, and sort through various candles and wax melts, so that I can quickly find products that match my preferences and improve my shopping experience. | ![screenshot](/media/readme/feature02.png) |
+| As a user, I want to easily browse, search, and sort through various activities, so that I can quickly find products that match my preferences and improve my shopping experience. | ![screenshot](/media/readme/feature02.png) |
 | As a user, I want clear navigation elements and interactive buttons, so that I can easily move between sections/pages and perform actions efficiently, enhancing my overall experience on the site. | ![screenshot](/media/readme/feature03.png) |
 | As an administrator, I want to manage products effectively by adding new items, updating details, and removing discontinued products, so that I can keep the inventory fresh and relevant for users. | ![screenshot](/media/readme/feature09.png) |
 | As a user, I want to manage my shopping bag by adding, editing, or removing items before checkout, so that I can review and adjust my orders conveniently, ensuring a smooth purchasing process. | ![screenshot](media/readme/feature05.png) |

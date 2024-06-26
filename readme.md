@@ -6,7 +6,7 @@ Welcome to the Off the Beaten Track. This website has been designed to provide a
 
 ## UX
 
-Designing Off The Beaten Track involved understanding the target audience and competitors, defining goals, and creating wireframes and prototypes for layout and functionality. Developing a visual identity with design mockups follows, leading to the coding of designs into HTML, CSS, and JavaScript, ensuring responsiveness across devices. Testing included maual/usability testing, and performance optimization. The launch involved deploying the website securely via Heroku.
+Designing Off The Beaten Track involved understanding the target audience and competitors, defining goals, and creating wireframes and prototypes for layout and functionality. Developing a visual identity with design mockups follows, leading to the coding of designs into HTML, CSS, and JavaScript, ensuring responsiveness across devices. Testing included manual/usability testing, and performance optimisation. The launch involved deploying the website securely via Heroku.
 
 ### Colour Scheme
 
@@ -135,7 +135,7 @@ Reviews
 
 - **User Authentication and Profile Creation**
 
-    - Users can create accounts and profiles to store their order details and preferences, providing a personalized shopping experience. This provides value as it enables users to manage their orders and preferences conveniently and securely, fostering loyalty and repeat purchases.
+    - Users can create accounts and profiles to store their order details and preferences, providing a personalised shopping experience. This provides value as it enables users to manage their orders and preferences conveniently and securely, fostering loyalty and repeat purchases.
 
 ![screenshot](/media/readme/authentication.png)
 
@@ -215,7 +215,7 @@ There are many great additions that can be added to the sit to make UX better an
 	- Introduce the option for users to purchase and redeem gift cards or vouchers for themselves or others.
 
 - Subscription Services
-	- Offer subscription services where users can subscribe to receive regular deliveries of their favorite candles or wax melts.
+	- Offer subscription services where users can subscribe to receive regular booking of their favourite activities.
 
 - Live Chat Support
 	- Offer live chat support to assist users with inquiries, product recommendations, and troubleshooting in real-time.
@@ -225,7 +225,7 @@ There are many great additions that can be added to the sit to make UX better an
 
 ## Tools & Technologies Used
 
-Techlologies used during the creation of Off The Beaten TRack include:
+Techlologies used during the creation of Off The Beaten Track include:
 
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.

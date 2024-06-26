@@ -13,10 +13,9 @@ Designing Off The Beaten Track involved understanding the target audience and co
 At Off The Beaten Track, our customers are looking for a professional, trustworthy and exciting shopping experience, where they can find the best activities available worldwide. With this in mind, the following colours were chosen for the site. 
 
 - `#000000` used for primary text.
-- `#E84610` used for primary highlights.
-- `#4A4A4F` used for secondary text.
-- `#009FE3` used for secondary highlights.
-- `#faebd780` and `#f4ede7` were used for background colour. 
+- `#99bc85` used for main navbar.
+- `#d5e7c5` used for primary body.
+- `#e2f1db` used for secondary highlights. 
 
 ![screenshot](/media/readme/colour-pallette.png)
 
@@ -203,6 +202,9 @@ There are many great additions that can be added to the sit to make UX better an
 - Wishlist Functionality
 	- Allow users to create and manage wishlists of products they're interested in purchasing in the future.
 
+- Improved Datepicker Technology
+	- Improve datepicker for activities so that dates in the past cannot be selected. Also, link the datepicker to a calendar app, so users can view certain days that the activity is available. 
+
 - Personalised Recommendations
 	-Implement algorithms to provide personalised product recommendations based on users' browsing and purchase history.
 
@@ -223,7 +225,7 @@ There are many great additions that can be added to the sit to make UX better an
 
 ## Tools & Technologies Used
 
-Techlologies used during the creation of Lunar Glow include:
+Techlologies used during the creation of Off The Beaten TRack include:
 
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
@@ -434,7 +436,7 @@ Back on the AWS Services Menu, search for and open **IAM** (Identity and Access 
 Once on the IAM page, follow these steps:
 
 - From **User Groups**, click **Create New Group**.
-	- Suggested Name: `group-lunar_glow` (group + the project name)
+	- Suggested Name: `group-beaten-track` (group + the project name)
 - Tags are optional, but you must click it to get to the **review policy** page.
 - From **User Groups**, select your newly created group, and go to the **Permissions** tab.
 - Open the **Add Permissions** dropdown, and click **Attach Policies**.
@@ -460,17 +462,17 @@ Once on the IAM page, follow these steps:
 		```
 	
 	- Click **Review Policy**.
-	- Suggested Name: `policy-lunar_glow` (policy + the project name)
+	- Suggested Name: `policy-beaten-track` (policy + the project name)
 	- Provide a description:
-		- "Access to S3 Bucket for lunar_glow static files."
+		- "Access to S3 Bucket for beaten-track static files."
 	- Click **Create Policy**.
-- From **User Groups**, click your "group-lunar_glow".
+- From **User Groups**, click your "group-beaten-track".
 - Click **Attach Policy**.
-- Search for the policy you've just created ("policy-lunar_glow") and select it, then **Attach Policy**.
+- Search for the policy you've just created ("policy-beaten-track") and select it, then **Attach Policy**.
 - From **User Groups**, click **Add User**.
-	- Suggested Name: `user-lunar_glow` (user + the project name)
+	- Suggested Name: `user-beaten-track` (user + the project name)
 - For "Select AWS Access Type", select **Programmatic Access**.
-- Select the group to add your new user to: `group-lunar_glow`
+- Select the group to add your new user to: `group-beaten-track`
 - Tags are optional, but you must click it to get to the **review user** page.
 - Click **Create User** once done.
 - You should see a button to **Download .csv**, so click it to save a copy on your system.
@@ -502,7 +504,7 @@ As a backup, in case users prematurely close the purchase-order page during paym
 
 - From your Stripe dashboard, click **Developers**, and select **Webhooks**.
 - From there, click **Add Endpoint**.
-	- `https://lunar-glow-77444c493d2e.herokuapp.com/checkout/wh/`
+	- `https://beaten-track-77444c493d2e.herokuapp.com/checkout/wh/`
 - Click **receive all events**.
 - Click **Add Endpoint** to complete the process.
 - You'll have a new key here:
@@ -524,7 +526,7 @@ Once you've created a Gmail (Google) account and logged-in, follow these series 
 - This might prompt you once again to confirm your password and account.
 - Select **Mail** for the app type.
 - Select **Other (Custom name)** for the device type.
-	- Any custom name, such as "Django" or lunar_glow
+	- Any custom name, such as "Django" or beaten-track
 - You'll be provided with a 16-character password (API key).
 	- Save this somewhere locally, as you cannot access this key again later!
 	- `EMAIL_HOST_PASS` = user's 16-character API key
@@ -554,10 +556,11 @@ Deployment steps are as follows, after account setup:
 | `STRIPE_WH_SECRET` | user's own value |
 | `USE_AWS` | True |
 
-Heroku needs two additional files in order to deploy properly.
+Heroku needs three additional files in order to deploy properly.
 
 - requirements.txt
 - Procfile
+- runtime.txt
 
 You can install this project's **requirements** (where applicable) using:
 
@@ -636,18 +639,18 @@ If you'd like to backup your database models, use the following command for each
 
 You can clone the repository by following these steps:
 
-1. Go to the [GitHub repository](https://github.com/d3lyth/lunar_glow) 
+1. Go to the [GitHub repository](https://github.com/Mattjones444/off-the-beaten-track) 
 2. Locate the Code button above the list of files and click it 
 3. Select if you prefer to clone using HTTPS, SSH, or GitHub CLI and click the copy button to copy the URL to your clipboard
 4. Open Git Bash or Terminal
 5. Change the current working directory to the one where you want the cloned directory
 6. In your IDE Terminal, type the following command to clone my repository:
-	- `git clone https://github.com/d3lyth/lunar_glow.git`
+	- `git clone https://github.com/d3lyth/beaten-track.git`
 7. Press Enter to create your local clone.
 
 Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/d3lyth/lunar_glow)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Mattjones444/off-the-beaten-track)
 
 Please note that in order to directly open the project in Gitpod, you need to have the browser extension installed.
 A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
@@ -657,7 +660,7 @@ A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/conf
 By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository.
 You can fork this repository by using the following steps:
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/d3lyth/lunar_glow)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Mattjones444/off-the-beaten-track)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
@@ -669,9 +672,8 @@ After thoroughly comparing Local vs live deployment, there doesn't seem to be an
 
 The main code base for this project has come from the Boutique Ado walkthrough by [Code Institute](https://learn.codeinstitute.net), that I have then added, edited and removed some features and code. This will include the profiles app, the checkout and bag app and various other features of the website.
 
-The code for the footer has been based on and adapted from [Tim Nelson](https://github.com/TravelTimN) in this [html file](https://github.com/TravelTimN/iraqikurdistanguide/blob/main/templates/base.html).
 
-The product names and descriptions for various products and scent profiles were generated using AI - [ChatGPT](https://chat.openai.com/).
+The product names and descriptions for various activities were generated using AI - [ChatGPT](https://chat.openai.com/).
 
 Image credit can be seen below.
 
@@ -680,17 +682,7 @@ Image credit can be seen below.
 | Source | Location | Notes |
 | --- | --- | --- |
 | [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
-| [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
-| [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site | responsive HTML/CSS/JS navbar |
-| [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) | contact page | interactive pop-up (modal) |
-| [W3Schools](https://www.w3schools.com/css/css3_variables.asp) | entire site | how to use CSS :root variables |
-| [Flexbox Froggy](https://flexboxfroggy.com/) | entire site | modern responsive layouts |
-| [Grid Garden](https://cssgridgarden.com) | entire site | modern responsive layouts |
-| [StackOverflow](https://stackoverflow.com/a/2450976) | quiz page | Fisher-Yates/Knuth shuffle in JS |
-| [YouTube](https://www.youtube.com/watch?v=YL1F4dCUlLc) | leaderboard | using `localStorage()` in JS for high scores |
-| [YouTube](https://www.youtube.com/watch?v=u51Zjlnui4Y) | PP3 terminal | tutorial for adding color to the Python terminal |
-| [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
-| [Medium](https://medium.com/@yathomasi1/1-using-django-extensions-to-visualize-the-database-diagram-in-django-application-c5fa7e710e16) | artice | instructions on how to create erd diagrams using django extensions |
+| [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" ||
 
 ### Media
 
@@ -699,15 +691,10 @@ Here are the sources of the images for the website.
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
 | [Pexels](https://www.flaticon.com/free-icon/candle_604680) | entire site | image | favicon on all pages |
-| [Ethel and Co](https://ethelandco.co.uk/) | home page | image | hero image background |
-| [ScentMyLove](https://www.scentmylove.co.uk) | entire site | image | sample of fake products - mainly candles and wax bars |
-| [Etsy](https://etsy.co.uk/) | entire site | image | sample of fake products |
+| [Canva](https://ethelandco.co.uk/) | home page | image | hero image background |
 | [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
 
 ### Acknowledgements
 
-- I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their support throughout the development of this project.
-- I would like to thank the [Code Institute](https://codeinstitute.net) tutor team (especially Roman) for their assistance with troubleshooting and debugging some project issues.
-- I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
-- I would like to thank my partner Rob, and my daughters for believing in me, and allowing me to make this transition into software development.
-- I would like to thank my friend Matt, for his coding advice.
+- I would like to thank my Code Institute mentor, [Ronan McClelland] for their support throughout the development of this project.
+- I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.

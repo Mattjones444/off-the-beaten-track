@@ -426,18 +426,6 @@ footer{
     }
 }
 
-@media (min-width: 1200px) {
-    .container {
-      max-width: 80%;
-    }
-  
-    .card-img-top {
-      height: 400px;
-      width: 100%;
-      object-fit: cover;
-  }
-  }
-
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {

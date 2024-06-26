@@ -170,6 +170,12 @@ Unit testing was used to check the validity of forms, a few selected functions a
 | As a user, I want to manage my shopping bag by adding, editing, or removing items before checkout, so that I can review and adjust my orders conveniently, ensuring a smooth purchasing process. | ![screenshot](media/readme/feature05.png) |
 | As an administrator, I want access to a dashboard to manage various aspects of the website, including products, user profiles, orders, FAQs, and newsletter subscribers, so that I can efficiently oversee and maintain the site for optimal performance and user experience. | ![screenshot](/media/readme/admindashboard.png) |
 
+## Accessibility Testing
+
+- Screen Reader for Goggle Chrome, The website was tested with Screen Reader for Goggle Chrome. No issues arose.
+- The website was tested with Toptal Colorfilter to make sure it is accessible for colour-blind users. No accessibility 
+  issues were detected. 
+
 ## Bugs
 
 - Responsiveness issues on homepage with hero-message not displaying correctly on mobile devices.
@@ -188,3 +194,5 @@ Unit testing was used to check the validity of forms, a few selected functions a
 - On devices smaller than 375px, the page starts to have `overflow-x` scrolling.
 
     - Attempted fix: I tried to add additional media queries to handle this, but things started becoming too small to read.
+      This is sometimes true for smaller devices, where the 'plus' button to adjust items in the basket wraps to the 
+      next line.

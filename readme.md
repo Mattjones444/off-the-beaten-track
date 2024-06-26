@@ -36,7 +36,7 @@ The font was used to give a clean and elegant finish.
 
 \- I want to create an account and set up my profile, so that I can store my order details and preferences securely, enhancing my shopping experience.
 
-\- I want to easily browse, search, and sort through various candles and wax melts, so that I can quickly find products that match my preferences and improve my shopping experience.
+\- I want to easily browse, search, and sort through various adventurous activities, so that I can quickly find products that match my preferences and improve my shopping experience.
 
 \- I want clear navigation elements and interactive buttons, so that I can easily move between sections/pages and perform actions efficiently, enhancing my overall experience on the site.
 

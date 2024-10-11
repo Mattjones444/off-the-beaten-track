@@ -51,7 +51,8 @@ def all_activity(request):
                     messages.error(request, "You didn't enter any search criteria!")
                     return redirect(reverse('activity'))
 
-                queries = Q(name__icontains=query) | Q(description__icontains(query))
+                queries = Q(name__icontains=query) | Q(description__icontains=query)
+
                 activity = activity.filter(queries)
 
         current_sorting = f'{sort}_{direction}'

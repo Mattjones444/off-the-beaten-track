@@ -31,8 +31,12 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG')
 
-ALLOWED_HOSTS = ['off-the-beaten-track-b019d3277c26.herokuapp.com', 'localhost', 'www.beaten_track.herokuapp.com',]
 
+ALLOWED_HOSTS = ['8000-mattjones44-offthebeate-miifc8b9ufa.ws.codeinstitute-ide.net', 'off-the-beaten-track-b019d3277c26.herokuapp.com', 'localhost', 'www.beaten_track.herokuapp.com']
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-mattjones44-offthebeate-miifc8b9ufa.ws.codeinstitute-ide.net',
+]
 
 
 # Application definition
@@ -65,6 +69,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'beaten_track.urls'

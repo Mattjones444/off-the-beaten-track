@@ -76,7 +76,7 @@
         "group_size": 3,
         "rating":2.5,
         "duration": 1.5,
-        "image": "balloonsturkey"
+        "image": "balloonsturkey.jpeg"
         }
       },
       {
@@ -156,7 +156,7 @@
         "group_size": 5,
         "rating":2.9,
         "duration": 3.5,
-        "image": "sydney.webp"
+        "image": "sydneyharbourbridge.jpeg"
         }
       },
       {
@@ -316,7 +316,7 @@
         "group_size": 10,
         "rating":4.7,
         "duration": 3.0,
-        "image": "tajmahal.avif"
+        "image": "tajmahal.jpg"
         }
       },
       {
@@ -332,7 +332,7 @@
         "group_size": 8,
         "rating":4.9,
         "duration": 5.0,
-        "image": "barrierreef.webp"
+        "image": "greatbarrierreef.webp"
         }
       },
       {
@@ -348,7 +348,7 @@
         "group_size": 5,
         "rating":2.5,
         "duration": 8.0,
-        "image": "javavolcano.webp"
+        "image": "volcanotrecking.jpg"
         }
       },
       {
@@ -364,7 +364,7 @@
         "group_size": 4,
         "rating":4.7,
         "duration": 3.0,
-        "image": "lavender.avif"
+        "image": "lavender_field.jpeg"
         }
       },
       {
@@ -412,7 +412,7 @@
         "group_size": 15,
         "rating":3.7,
         "duration": 2.0,
-        "image": "sevillaflamenco.webp"
+        "image": "flamenco.jpg"
         }
       },
       {
@@ -557,7 +557,7 @@
         "group_size": 3,
         "rating":2.5,
         "duration": 1.5,
-        "image": "balloonsturkey"
+        "image": "balloonsturkey.jpeg"
         }
       },
       {
@@ -637,7 +637,7 @@
         "group_size": 5,
         "rating":2.9,
         "duration": 3.5,
-        "image": "sydney.webp"
+        "image": "sydneyharbourbridge.jpg"
         }
       },
       {
@@ -797,7 +797,7 @@
         "group_size": 10,
         "rating":4.7,
         "duration": 3.0,
-        "image": "tajmahal.avif"
+        "image": "tajmahal.jpg"
         }
       },
       {
@@ -813,7 +813,7 @@
         "group_size": 8,
         "rating":4.9,
         "duration": 5.0,
-        "image": "barrierreef.webp"
+        "image": "greatbarrierreef.webp"
         }
       },
       {
@@ -829,7 +829,7 @@
         "group_size": 5,
         "rating":2.5,
         "duration": 8.0,
-        "image": "javavolcano.webp"
+        "image": "volcanotrecking.jpg"
         }
       },
       {
@@ -845,7 +845,7 @@
         "group_size": 4,
         "rating":4.7,
         "duration": 3.0,
-        "image": "lavender.avif"
+        "image": "lavender_field.jpeg"
         }
       },
       {
@@ -893,7 +893,7 @@
         "group_size": 15,
         "rating":3.7,
         "duration": 2.0,
-        "image": "sevillaflamenco.webp"
+        "image": "flamenco.jpg"
         }
       },
       {

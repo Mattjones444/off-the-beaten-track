@@ -313,6 +313,15 @@ footer{
     border-color: #125688;
   }
 
+  /* Error Pages */
+
+  .error-container {
+    margin-left: 100px;
+    margin-top: 150px;
+    color: #fff;
+
+  }
+
 
 
 
